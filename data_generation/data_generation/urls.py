@@ -21,4 +21,5 @@ from addresses import views as addresses_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('post_addresses/create', addresses_views.post_address_create_view),
+    path('streets/create', addresses_views.street_address_create_view)
 ]

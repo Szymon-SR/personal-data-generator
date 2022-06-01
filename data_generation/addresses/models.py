@@ -5,3 +5,7 @@ class PostAddress(models.Model):
     post_code = models.TextField()
     voivodeship = models.TextField()
     county = models.TextField()
+
+
+class Street(models.Model):
+    name = models.TextField()
