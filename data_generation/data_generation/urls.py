@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path
 
 from addresses import views as addresses_views
+from .views import generation_view, home_view
 
 urlpatterns = [
+    path('', home_view),
+    path('generation/', generation_view, name='generation'),
     path('admin/', admin.site.urls),
     path('post_addresses/create', addresses_views.post_address_create_view),
     path('streets/create', addresses_views.street_address_create_view)
