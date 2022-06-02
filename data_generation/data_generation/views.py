@@ -4,13 +4,14 @@ from django.template.loader import render_to_string
 
 from addresses.models import PostAddress, Street
 
-# tutaj home view, gdzie jest opis projektu i przycisk generuj,
-# który zabiera nas do generacji
-
 def home_view(request):
+    """View for the main page of the website"""
+    
     return HttpResponse(render_to_string('home-view.html', {}))
 
 def generation_view(request):
+    """View for generating one person"""
+
     post_ids = PostAddress.objects.values_list('id', flat=True)
     random_post_id = random.choice(post_ids)
     
