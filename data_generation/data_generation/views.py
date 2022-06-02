@@ -27,7 +27,8 @@ def generation_view(request):
         'post_code': postaddr_obj.post_code,
         'city': postaddr_obj.city,
         'county': postaddr_obj.county,
-        'voivodeship': postaddr_obj.voivodeship
+        'voivodeship': postaddr_obj.voivodeship,
+        'house_number': 15, # TODO generation
     }
 
     HTML_STRING = render_to_string('generation-view.html', context=context)

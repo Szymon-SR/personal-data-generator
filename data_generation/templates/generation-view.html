@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Personal Data Generation</h1>
-<p>{{ street_name }}</p>
-<p>{{ post_code }}</p>
-<p>{{ city }}</p>
-<p>{{ county }}</p>
-<p>{{ voivodeship }}</p>
+<a href="{% url 'home' %}">
+    <h1>Generacja danych osobowych</h1>
+</a>
+
+<h2>Dane adresowe</h2>
+<p>Nazwa ulicy: {{ street_name }}</p>
+<p>Numer domu/mieszkania: {{ house_number }}</p>
+<p>Kod pocztowy: {{ post_code }}</p>
+<p>Miejscowość: {{ city }}</p>
+<p>Powiat: {{ county }}</p>
+<p>Województwo: {{ voivodeship }}</p>
 
 <div style="margin-top:30px;" class="container">
     <a href="{% url 'generation' %}" class="btn btn-1">
