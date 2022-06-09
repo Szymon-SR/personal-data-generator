@@ -4,16 +4,13 @@
 
 
 <div style="margin-top:30px;">
+    <p>Select number of people, file type and fields to generate</p>
     <form action="" method="GET">
-        {{ form }}
+        {{ form.as_p }}
         <input type="submit" value="Export!">
     </form>
 </div>
 <br>
-{% if exported %}
-<p>Data has been exported to file</p>
-{% else %}
-<p>You can export data of many people to txt or csv file</p>
-{% endif %}
+
 
 {% endblock content %}

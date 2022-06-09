@@ -8,4 +8,14 @@ first_name last_name phone_number birth_date        pesel   street_name house_nu
      Tymon   CIEŚLUK    713252349  14.1.1983  83011429393     Złotoglin          23i    91-364            Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie
     Joanna    GIERAK    582989333  21.4.1956  56042158587 Plac Kanałowy           27    99-412       Kiernozia                      Powiat łowicki            Województwo łódzkie
     Nikola KŁODOWSKA    621294620   6.6.1986  86066160810       Zarynek      63 / 62    80-555          Gdańsk    Miasto Gdańsk na prawach powiatu          Województwo pomorskie
-      Alan    KARDAŚ    680217285  9.10.1982   8210950193       Strużka           18    42-680 Tarnowskie Góry                  Powiat tarnogórski            Województwo śląskie
+      Alan    KARDAŚ    680217285  9.10.1982   8210950193       Strużka           18    42-680 Tarnowskie Góry                  Powiat tarnogórski            Województwo śląskiefirst_name  last_name phone_number birth_date       pesel           street_name house_number post_code       city                              county                     voivodeship
+   Justyna  WICHOWSKA    816896912  19.9.1985 85091923085               Wzgórze           24    33-191 Jastrzębia                    Powiat tarnowski         Województwo małopolskie
+   Grażyna    KORYCKA    694405468  28.5.1947 47052847886          Na Mazurkach       5 / 82    01-605   Warszawa  Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+  Dominika     KALATA    885746019  10.1.1932 32011017689            Nad Słupią       4 / 40    03-634   Warszawa  Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+     Agata     ŁACINA    691077316 16.11.1986 86111692008        Jana Dziedzica      36 / 11    15-424  Białystok Miasto Białystok na prawach powiatu           Województwo podlaskie
+ Kazimiera      LALIK    688261697 17.10.1982 82101796145             Pociskowa           18    47-400   Racibórz                   Powiat raciborski             Województwo śląskie
+   Urszula  CZERNICKA    764486504  9.12.1941  4112969745             Buraczana           6g    31-983     Kraków    Miasto Kraków na prawach powiatu         Województwo małopolskie
+    Kacper   MIESZAŁA    656949483   7.4.1994  9404774478            Wojnowicka      51 / 78    42-453       Łazy                Powiat zawierciański             Województwo śląskie
+Małgorzata   BIAŁOŻYT    500729116 14.11.1986 86111458721             Stary Las     84i / 48    20-301     Lublin    Miasto Lublin na prawach powiatu           Województwo lubelskie
+  Elżbieta WIECHOWSKA    699192453  2.11.1942  4211221389 Zygmunta Stojowskiego      27 / 75    11-041    Olsztyn   Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
+  Stefania    SZYGUŁA    573479769  22.4.1992 92042263565        Strzemieszycka          51b    10-322    Olsztyn   Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
