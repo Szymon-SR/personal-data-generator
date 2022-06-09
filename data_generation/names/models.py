@@ -6,9 +6,24 @@ class AbstractName(models.Model):
     class Meta:
         abstract = True
 
+    # abstract name is not correct for either males or females
+    def for_females(self):
+        return False
+
+    def for_males(self):
+        return False
+
 
 class FirstName(AbstractName):
     is_male = models.BooleanField()
+
+    def for_females(self):
+        """Returns true if the name is correct for females"""
+        return not self.is_male
+
+    def for_males(self):
+        """Returns true if the name is correct for males"""
+        return self.is_male
 
 
 class LastName(AbstractName):
@@ -25,10 +40,10 @@ class LastName(AbstractName):
         default=Gender.NEUTRAL,
     )
 
-    def for_males(self):
-        """Returns true if the name is correct for males"""
-        return self.matching_gender in {self.Gender.MALE, self.Gender.NEUTRAL}
-
     def for_females(self):
         """Returns true if the name is correct for females"""
         return self.matching_gender in {self.Gender.FEMALE, self.Gender.NEUTRAL}
+
+    def for_males(self):
+        """Returns true if the name is correct for males"""
+        return self.matching_gender in {self.Gender.MALE, self.Gender.NEUTRAL}

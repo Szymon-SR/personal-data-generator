@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<a href="{% url 'home' %}">
-    <h1>Generacja danych osobowych</h1>
-</a>
+
+<h2>Dane osobowe</h2>
+<p>Imię: {{ first_name }}</p>
+<p>Nazwisko: {{ last_name }}</p>
+<p>Numer telefonu: {{ phone_number }}</p>
+<p>Data urodzenia: {{ birth_date }}</p>
+<p>Numer PESEL: {{ pesel }}</p>
+
 
 <h2>Dane adresowe</h2>
 <p>Nazwa ulicy: {{ street_name }}</p>

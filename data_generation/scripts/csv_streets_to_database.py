@@ -13,7 +13,7 @@ def run():
             next(reader) # skip the header
 
             # clean the existing data in the database
-            Street.objects.all().delete()
+            # Street.objects.all().delete()
 
             for row in reader:
                 if row[1]: 

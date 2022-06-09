@@ -18,11 +18,12 @@ from django.urls import path
 
 from addresses import views as addresses_views
 from names import views as names_views
-from .views import generation_view, home_view
+from .views import generation_view, home_view, file_view
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('generation/', generation_view, name='generation'),
+    path('to_file/', file_view, name='to_file'),
     path('admin/', admin.site.urls),
     path('post_addresses/create', addresses_views.post_address_create_view),
     path('streets/create', addresses_views.street_address_create_view),
