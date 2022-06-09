@@ -1,0 +1,11 @@
+first_name last_name phone_number birth_date        pesel   street_name house_number post_code            city                              county                    voivodeship
+   Henryka    MALARA    660349447  21.2.1936  36022168785       Butryma       64 / 3    15-161       Białystok Miasto Białystok na prawach powiatu          Województwo podlaskie
+ Krzysztof  PRZYTUŁA    690614324 21.11.1996  96112155515     Podłączna            6    87-112           Toruń     Miasto Toruń na prawach powiatu Województwo kujawsko-pomorskie
+   Dominik   MARCISZ    502329929  17.7.1963  63071768558    Pod Obrowo     41c / 44    02-495        Warszawa  Miasto Warszawa na prawach powiatu        Województwo mazowieckie
+    Renata    MYSIAK    883372510   4.8.1998   9808470641     Bilinówka           5d    15-195       Białystok Miasto Białystok na prawach powiatu          Województwo podlaskie
+     Karol  WERNICKI    736910252   8.3.1937   3703866959     Tatarkowa           7d    45-313           Opole     Miasto Opole na prawach powiatu           Województwo opolskie
+    Michał     BUDKA    699363178  26.1.1974 740126245110      Ryszarda       48 / 5    02-776        Warszawa  Miasto Warszawa na prawach powiatu        Województwo mazowieckie
+     Tymon   CIEŚLUK    713252349  14.1.1983  83011429393     Złotoglin          23i    91-364            Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie
+    Joanna    GIERAK    582989333  21.4.1956  56042158587 Plac Kanałowy           27    99-412       Kiernozia                      Powiat łowicki            Województwo łódzkie
+    Nikola KŁODOWSKA    621294620   6.6.1986  86066160810       Zarynek      63 / 62    80-555          Gdańsk    Miasto Gdańsk na prawach powiatu          Województwo pomorskie
+      Alan    KARDAŚ    680217285  9.10.1982   8210950193       Strużka           18    42-680 Tarnowskie Góry                  Powiat tarnogórski            Województwo śląskie

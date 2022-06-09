@@ -9,7 +9,7 @@ from names.models import FirstName, LastName
 from non_database import number_generator
 
 from .forms import GenerationForm, ToFileForm
-from .exporting import export_data_to_csv
+from .exporting import export_data_to_csv, export_data_to_txt
 
 class GenderLetter(Enum):
         MALE = 'M'
@@ -103,14 +103,21 @@ def file_view(request):
 
     if request.method == 'GET' and form.is_valid():
         form_number_of_rows = form.cleaned_data['number_of_rows']
+        form_datatype = form.cleaned_data['file_type']
 
         # create a list to store multiple dictionaries, each with data of one person
         all_people = [generate_person_dict() for _ in range(form_number_of_rows)]
-        csv_path = export_data_to_csv(all_people)
+        
+        if form_datatype == 'txt':
+            filepath = export_data_to_txt(all_people)
+            filename = 'personal_data.txt'
+        else:
+            filepath = export_data_to_csv(all_people)
+            filename = 'personal_data.csv'
 
-        csv_file = open(csv_path).read()
-        response = FileResponse(csv_file)
-        response['Content-Disposition'] = 'attachment; filename=personal_data.csv'
+        file = open(filepath).read()
+        response = FileResponse(file)
+        response['Content-Disposition'] = f'attachment; filename={filename}'
 
         return response
 
