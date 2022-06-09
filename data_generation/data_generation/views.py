@@ -1,4 +1,5 @@
 import random
+from enum import Enum
 from django.http import HttpResponse
 from django.template.loader import render_to_string
 
@@ -6,6 +7,13 @@ from addresses.models import PostAddress, Street
 from names.models import FirstName, LastName
 
 from non_database import number_generator
+
+from .forms import GenerationForm
+
+class GenderLetter(Enum):
+        MALE = 'M'
+        FEMALE = 'F'
+        NEUTRAL = 'N'
 
 def home_view(request):
     """View for the main page of the website"""
@@ -16,19 +24,35 @@ def home_view(request):
 def generation_view(request):
     """View for generating one person"""
 
-    # picking person gender, male or female
-    generating_male = random.choice([True, False])
+    # initializing a form object to get input from user
+    form = GenerationForm(request.GET or None)
+    form.fields['gender'].initial = 'both'
 
-    first_name_ids = FirstName.objects.filter(is_male=generating_male).values_list('id', flat=True)
+    # by default, generate female and male names
+    form_gender='both'
+
+    # print(request.path)
+
+    if request.method == 'GET' and form.is_valid():
+        form_gender = form.cleaned_data['gender']   # gender is' both', 'female' or 'male'
+        print(form_gender)
+
+    # convert text gender to boolean (True if male, False if female)
+    # if user picked both genders, randomize it
+    gender_to_boolean = {'both': random.choice([True, False]), 'female': False, 'male': True}
+    male_requested = gender_to_boolean[form_gender]
+
+    first_name_ids = FirstName.objects.filter(is_male=male_requested).values_list('id', flat=True)
     first_name_obj = FirstName.objects.get(id=random.choice(first_name_ids))
 
-    incorrect_gender = {True: 'F', False: 'M'}
+    # both genders can take neutral last names, pick a letter to exclude
+    boolean_to_excluded_gender = {True: 'F', False: 'M'}
 
-    last_name_ids = LastName.objects.exclude(matching_gender=incorrect_gender[generating_male]).values_list('id', flat=True)
+    last_name_ids = LastName.objects.exclude(matching_gender=boolean_to_excluded_gender[male_requested]).values_list('id', flat=True)
     last_name_obj = LastName.objects.get(id=random.choice(last_name_ids))
 
     # NUMBERS
-    pesel_gen = number_generator.PeselGenerator(generating_male)
+    pesel_gen = number_generator.PeselGenerator(male_requested)
 
     # ADDRESS
     post_ids = PostAddress.objects.values_list('id', flat=True)    
@@ -38,6 +62,7 @@ def generation_view(request):
     street_obj = Street.objects.get(id=random.choice(street_ids))
 
     context = {
+        'form': form,
         'first_name': first_name_obj.name.title(),
         'last_name': last_name_obj.name,
         'phone_number': number_generator.generate_phone_number(),

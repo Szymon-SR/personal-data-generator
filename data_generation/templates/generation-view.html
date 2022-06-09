@@ -1,26 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h2>Dane osobowe</h2>
-<p>Imię: {{ first_name }}</p>
-<p>Nazwisko: {{ last_name }}</p>
-<p>Numer telefonu: {{ phone_number }}</p>
-<p>Data urodzenia: {{ birth_date }}</p>
-<p>Numer PESEL: {{ pesel }}</p>
-
-
-<h2>Dane adresowe</h2>
-<p>Nazwa ulicy: {{ street_name }}</p>
-<p>Numer domu/mieszkania: {{ house_number }}</p>
-<p>Kod pocztowy: {{ post_code }}</p>
-<p>Miejscowość: {{ city }}</p>
-<p>Powiat: {{ county }}</p>
-<p>Województwo: {{ voivodeship }}</p>
-
-<div style="margin-top:30px;" class="container">
-    <a href="{% url 'generation' %}" class="btn btn-1">
-        <button type="button" class="btn btn-2">Generate another</button>
-    </a>
+<div style="margin-top:30px;">
+    <form action="" method="GET">
+        {{ form }}
+        <input type="submit" value="Generate!">
+    </form>
 </div>
+
+<div>
+    <h2>Dane osobowe</h2>
+    <p>Imię: {{ first_name }}</p>
+    <p>Nazwisko: {{ last_name }}</p>
+    <p>Numer telefonu: {{ phone_number }}</p>
+    <p>Data urodzenia: {{ birth_date }}</p>
+    <p>Numer PESEL: {{ pesel }}</p>
+</div>
+
+<div>
+    <h2>Dane adresowe</h2>
+    <p>Nazwa ulicy: {{ street_name }}</p>
+    <p>Numer domu/mieszkania: {{ house_number }}</p>
+    <p>Kod pocztowy: {{ post_code }}</p>
+    <p>Miejscowość: {{ city }}</p>
+    <p>Powiat: {{ county }}</p>
+    <p>Województwo: {{ voivodeship }}</p>
+</div>
+
 {% endblock content %}

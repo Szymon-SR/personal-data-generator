@@ -23,6 +23,7 @@ from .views import generation_view, home_view, file_view
 urlpatterns = [
     path('', home_view, name='home'),
     path('generation/', generation_view, name='generation'),
+    path('generation/gender<str:gender>/', generation_view, name='generation_gender'),
     path('to_file/', file_view, name='to_file'),
     path('admin/', admin.site.urls),
     path('post_addresses/create', addresses_views.post_address_create_view),
