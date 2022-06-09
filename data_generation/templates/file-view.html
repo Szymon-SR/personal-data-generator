@@ -2,19 +2,18 @@
 
 {% block content %}
 
-{% if not exported %}
+
 <div style="margin-top:30px;">
-    <form action="." method="GET">
-        <p>Enter the number of people to generate</p>
-        {% csrf_token %}
-        <div style="margin-top:10px;"><input type="number" name="entries" placeholder="Liczba osób do wygenerowania" />
-        </div>
-        <div style="margin-top:30px;"><button type="button"> Export to csv file</button></div>
+    <form action="" method="GET">
+        {{ form }}
+        <input type="submit" value="Export!">
     </form>
 </div>
-{% else %}
+<br>
+{% if exported %}
 <p>Data has been exported to file</p>
-
+{% else %}
+<p>You can export data of many people to csv file</p>
 {% endif %}
 
 {% endblock content %}

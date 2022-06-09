@@ -7,9 +7,13 @@ GENDER_CHOICES = (
 )
 
 class GenerationForm(forms.Form):
+    """Django Form used to generate html forms, used to set parameters in generating one person"""
+
     gender = forms.ChoiceField(choices=GENDER_CHOICES, label='Gender to generate', initial='both')
 
-    def clean_gender(self):
-        if not self['gender'].html_name in self.data:
-            return self.fields['gender'].initial
-        return self.cleaned_data['gender']
+
+
+class ToFileForm(forms.Form):
+    """Django Form used to generate html forms, used to set parameters in generating data to file"""
+
+    number_of_rows = forms.IntegerField(max_value=1000, min_value=1, label='Number of people to generate')
