@@ -18,7 +18,10 @@ def generate_person_dict(
     requested_values: dict = {},
     all_values_requested: bool = False,
 ):
-    """Function to generate one person and return a dictionary with all the data"""
+    """
+    Function to generate one person based on requested attributes and return a dictionary with all the data
+    It uses both data from the database, and functions which generate random data on request
+    """
     assert requested_gender in ("both", "female", "male")
 
     # if all values were requested, create a dict with all True values
