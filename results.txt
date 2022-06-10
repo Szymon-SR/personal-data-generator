@@ -1,0 +1,11 @@
+first_name   last_name phone_number
+   Marlena       KLAJA    630744433
+      Leon   GAJKOWSKI    891849629
+    Ignacy   NADROWSKI    861098114
+   Dominik     BRYGOŁA    773971938
+ Kazimiera     PARZYCH    820797736
+   Dariusz KOŁODZIŃSKI    701891203
+  Waldemar     GŁOWIAK    607264233
+    Janina        KAIM    583674487
+    Nikola       ROBAK    808252978
+     Zenon        GAIK    788708961
