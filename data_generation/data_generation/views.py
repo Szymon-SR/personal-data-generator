@@ -52,8 +52,6 @@ def file_view(request):
         form_number_of_rows = form.cleaned_data["number_of_rows"]
         form_datatype = form.cleaned_data["file_type"]
 
-        print(form.cleaned_data)
-
         # create a list to store multiple dictionaries, each with data of one person
         all_people = [
             generate_person_dict(requested_values=form.cleaned_data)

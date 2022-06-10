@@ -81,28 +81,31 @@ def generate_person_dict(
         person_dict["pesel"] = pesel_gen.pesel
 
     # ADDRESS
-    post_ids = PostAddress.objects.values_list("id", flat=True)
-    postaddr_obj = PostAddress.objects.get(id=random.choice(post_ids))
-
-    street_ids = Street.objects.values_list("id", flat=True)
-    street_obj = Street.objects.get(id=random.choice(street_ids))
 
     if requested_values["gen_street"]:
+        street_ids = Street.objects.values_list("id", flat=True)
+        street_obj = Street.objects.get(id=random.choice(street_ids))
         person_dict["street_name"] = street_obj.name
 
     if requested_values["gen_house_number"]:
         person_dict["house_number"] = number_generator.generate_house_number()
 
-    if requested_values["gen_post_code"]:
-        person_dict["post_code"] = postaddr_obj.post_code
+    postaddr_attributes = ['post_code', 'city', 'county', 'voivodeship']
 
-    if requested_values["gen_city"]:
-        person_dict["city"] = postaddr_obj.city
+    # check if we need to get PostAddress from the database
+    postaddress_requested = False
 
-    if requested_values["gen_county"]:
-        person_dict["county"] = postaddr_obj.county
+    for attr in postaddr_attributes:
+        if requested_values[f'gen_{attr}']:
+            postaddress_requested = True
+            break
 
-    if requested_values["gen_voivodeship"]:
-        person_dict["voivodeship"] = postaddr_obj.voivodeship
+    if postaddress_requested:
+        post_ids = PostAddress.objects.values_list("id", flat=True)
+        postaddr_obj = PostAddress.objects.get(id=random.choice(post_ids))
+
+        for attr in postaddr_attributes:
+            if requested_values[f'gen_{attr}']:
+                person_dict[attr] = getattr(postaddr_obj, attr)
 
     return person_dict
