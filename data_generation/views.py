@@ -1,4 +1,3 @@
-
 from django.http import HttpResponse, FileResponse
 from django.template.loader import render_to_string
 
@@ -24,11 +23,10 @@ def generation_view(request):
     form_gender = "both"
 
     if request.method == "GET" and form.is_valid():
-        form_gender = form.cleaned_data[
-            "gender"
-        ]  # gender is' both', 'female' or 'male'
+        form_gender = form.cleaned_data["gender"]
+        # gender is' both', 'female' or 'male'
 
-    person_data = generate_person_dict(form_gender, all_values_requested=True)
+    person_data = generate_person_dict(requested_gender=form_gender, all_values_requested=True)
 
     context = {
         "form": form,

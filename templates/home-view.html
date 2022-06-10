@@ -3,15 +3,14 @@
 {% block content %}
 {% load static %}
 <div style="margin-top:30px;" class="container">
-    <a href="{% url 'generation' %}" class="btn btn-1">
-        <button type="button" class="btn btn-2">Generate one person</button>
+    <a href="{% url 'generation' %}">
+        <button type="button" class="btn btn-primary btn-lg">Generate one person</button>
     </a>
 </div>
 <div style="margin-top:30px;" class="container">
-    <a href="{% url 'to_file' %}" class="btn btn-1">
-        <button type="button" class="btn btn-2">Generate data to file</button>
+    <a href="{% url 'to_file' %}">
+        <button type="button" class="btn btn-primary btn-lg">Generate data to file</button>
     </a>
 </div>
 
-<img src="{% static 'images/github.jpg' %}" alt="Github logo">
 {% endblock content %}

@@ -9,23 +9,60 @@
     </form>
 </div>
 
-<div>
+<div class="container">
     <h2>Personal data</h2>
-    <p>First name: {{ first_name }}</p>
-    <p>Last name: {{ last_name }}</p>
-    <p>Telephone number: {{ phone_number }}</p>
-    <p>Birth date: {{ birth_date }}</p>
-    <p>PESEL number: {{ pesel }}</p>
+    <table class="table table-hover ">
+        <tr>
+            <th style="width: 40%">First name</th>
+            <td>{{ first_name }}</td>
+        </tr>
+        <tr>
+            <th>Last name</th>
+            <td>{{ last_name }}</td>
+        </tr>
+        <tr>
+            <th>Telephone number</th>
+            <td>{{ phone_number }}</td>
+        </tr>
+        <tr>
+            <th>Birth date</th>
+            <td>{{ birth_date }}</td>
+        </tr>
+        <tr>
+            <th>PESEL number</th>
+            <td>{{ pesel }}</td>
+        </tr>
+    </table>
 </div>
 
-<div>
+<div class="container">
     <h2>Address data</h2>
-    <p>Street: {{ street_name }}</p>
-    <p>House / flat number: {{ house_number }}</p>
-    <p>Postcode: {{ post_code }}</p>
-    <p>City / town: {{ city }}</p>
-    <p>County: {{ county }}</p>
-    <p>Voivodeship: {{ voivodeship }}</p>
+    <table class="table table-hover">
+        <tr>
+            <th style="width: 40%">Street</th>
+            <td>{{ street_name }}</td>
+        </tr>
+        <tr>
+            <th>House / flat number</th>
+            <td>{{ house_number }}</td>
+        </tr>
+        <tr>
+            <th>Post code</th>
+            <td>{{ post_code }}</td>
+        </tr>
+        <tr>
+            <th>City / town</th>
+            <td>{{ city }}</td>
+        </tr>
+        <tr>
+            <th>County</th>
+            <td>{{ county }}</td>
+        </tr>
+        <tr>
+            <th>Voivodeship</th>
+            <td>{{ voivodeship }}</td>
+        </tr>
+    </table>
 </div>
 
 {% endblock content %}
