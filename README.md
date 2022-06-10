@@ -13,9 +13,15 @@ Use cases:
 
  Structure:
 ├── addresses - Django app for address data
+
 ├── data_generation - Home of the django app
+
 ├── names - Django app for people names data
+
 ├── non_database - Directory for generating data on request
+
 ├── scripts - Scripts used to initially populate the database
+
 ├── static - Static files
+
 ├── templates - HTML templates
