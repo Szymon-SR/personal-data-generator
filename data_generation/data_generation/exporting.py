@@ -15,7 +15,7 @@ def export_data_to_txt(list_of_rows):
     df = pd.DataFrame.from_dict(list_of_rows)
     df_string = df.to_string(index=False, header=True)
 
-    with open(TXT_PATH, 'a') as f:
+    with open(TXT_PATH, 'w') as f:
         f.write(df_string)
 
     return TXT_PATH

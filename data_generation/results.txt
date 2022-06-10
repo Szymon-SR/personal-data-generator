@@ -1,21 +1,11 @@
-first_name last_name phone_number birth_date        pesel   street_name house_number post_code            city                              county                    voivodeship
-   Henryka    MALARA    660349447  21.2.1936  36022168785       Butryma       64 / 3    15-161       Białystok Miasto Białystok na prawach powiatu          Województwo podlaskie
- Krzysztof  PRZYTUŁA    690614324 21.11.1996  96112155515     Podłączna            6    87-112           Toruń     Miasto Toruń na prawach powiatu Województwo kujawsko-pomorskie
-   Dominik   MARCISZ    502329929  17.7.1963  63071768558    Pod Obrowo     41c / 44    02-495        Warszawa  Miasto Warszawa na prawach powiatu        Województwo mazowieckie
-    Renata    MYSIAK    883372510   4.8.1998   9808470641     Bilinówka           5d    15-195       Białystok Miasto Białystok na prawach powiatu          Województwo podlaskie
-     Karol  WERNICKI    736910252   8.3.1937   3703866959     Tatarkowa           7d    45-313           Opole     Miasto Opole na prawach powiatu           Województwo opolskie
-    Michał     BUDKA    699363178  26.1.1974 740126245110      Ryszarda       48 / 5    02-776        Warszawa  Miasto Warszawa na prawach powiatu        Województwo mazowieckie
-     Tymon   CIEŚLUK    713252349  14.1.1983  83011429393     Złotoglin          23i    91-364            Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie
-    Joanna    GIERAK    582989333  21.4.1956  56042158587 Plac Kanałowy           27    99-412       Kiernozia                      Powiat łowicki            Województwo łódzkie
-    Nikola KŁODOWSKA    621294620   6.6.1986  86066160810       Zarynek      63 / 62    80-555          Gdańsk    Miasto Gdańsk na prawach powiatu          Województwo pomorskie
-      Alan    KARDAŚ    680217285  9.10.1982   8210950193       Strużka           18    42-680 Tarnowskie Góry                  Powiat tarnogórski            Województwo śląskiefirst_name  last_name phone_number birth_date       pesel           street_name house_number post_code       city                              county                     voivodeship
-   Justyna  WICHOWSKA    816896912  19.9.1985 85091923085               Wzgórze           24    33-191 Jastrzębia                    Powiat tarnowski         Województwo małopolskie
-   Grażyna    KORYCKA    694405468  28.5.1947 47052847886          Na Mazurkach       5 / 82    01-605   Warszawa  Miasto Warszawa na prawach powiatu         Województwo mazowieckie
-  Dominika     KALATA    885746019  10.1.1932 32011017689            Nad Słupią       4 / 40    03-634   Warszawa  Miasto Warszawa na prawach powiatu         Województwo mazowieckie
-     Agata     ŁACINA    691077316 16.11.1986 86111692008        Jana Dziedzica      36 / 11    15-424  Białystok Miasto Białystok na prawach powiatu           Województwo podlaskie
- Kazimiera      LALIK    688261697 17.10.1982 82101796145             Pociskowa           18    47-400   Racibórz                   Powiat raciborski             Województwo śląskie
-   Urszula  CZERNICKA    764486504  9.12.1941  4112969745             Buraczana           6g    31-983     Kraków    Miasto Kraków na prawach powiatu         Województwo małopolskie
-    Kacper   MIESZAŁA    656949483   7.4.1994  9404774478            Wojnowicka      51 / 78    42-453       Łazy                Powiat zawierciański             Województwo śląskie
-Małgorzata   BIAŁOŻYT    500729116 14.11.1986 86111458721             Stary Las     84i / 48    20-301     Lublin    Miasto Lublin na prawach powiatu           Województwo lubelskie
-  Elżbieta WIECHOWSKA    699192453  2.11.1942  4211221389 Zygmunta Stojowskiego      27 / 75    11-041    Olsztyn   Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
-  Stefania    SZYGUŁA    573479769  22.4.1992 92042263565        Strzemieszycka          51b    10-322    Olsztyn   Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
+first_name   last_name phone_number birth_date     street_name house_number post_code             city                                     county                    voivodeship
+    Renata  CIECHAŃSKA    590546474 13.12.1973         Miętowa            5    61-023           Poznań           Miasto Poznań na prawach powiatu      Województwo wielkopolskie
+    Sandra FLORKIEWICZ    716482078  27.4.1961     Stoczkowska           30    15-634        Białystok        Miasto Białystok na prawach powiatu          Województwo podlaskie
+ Agnieszka   POPIELARZ    575505684  24.1.1984    Międzymoście           21    50-056          Wrocław          Miasto Wrocław na prawach powiatu       Województwo dolnośląskie
+   Jadwiga     TOMICKI    717233249   1.3.1984   Droga Zielona           50    75-435         Koszalin         Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie
+    Miłosz   BEDNARSKA    581013672  30.9.1986       Cyrulicza           88    44-335 Jastrzębie-Zdrój Miasto Jastrzębie-Zdrój na prawach powiatu            Województwo śląskie
+ Bogusława SZWAJKOWSKA    706785961  17.5.1952 Rudolfa Kukucza           38    35-061          Rzeszów          Miasto Rzeszów na prawach powiatu       Województwo podkarpackie
+  Sławomir       KUSAK    572606276   3.4.1958         Zimowit     56f / 24    00-537         Warszawa         Miasto Warszawa na prawach powiatu        Województwo mazowieckie
+    Sandra  GĘSIKOWSKA    665078081  22.7.1982   Dębowa Boczna       10 / 1    53-430          Wrocław          Miasto Wrocław na prawach powiatu       Województwo dolnośląskie
+   Bartosz    KUKULSKA    890031153  22.2.1942  Dębowe Wzgórze           79    61-045           Poznań           Miasto Poznań na prawach powiatu      Województwo wielkopolskie
+    Damian       ĆMIEL    527671237  4.11.1956     Nad Omulwią      18 / 36    80-734           Gdańsk           Miasto Gdańsk na prawach powiatu          Województwo pomorskie
