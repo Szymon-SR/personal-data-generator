@@ -10,3 +10,12 @@ Use cases:
  - generating data to test your software
  - generating data to later import to other programs, like MS Access
  - getting a random names for different purposes if you are not creative
+
+ Structure:
+├── addresses - Django app for address data
+├── data_generation - Home of the django app
+├── names - Django app for people names data
+├── non_database - Directory for generating data on request
+├── scripts - Scripts used to initially populate the database
+├── static - Static files
+├── templates - HTML templates
