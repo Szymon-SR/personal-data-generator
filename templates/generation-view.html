@@ -2,10 +2,13 @@
 
 {% block content %}
 
-<div style="margin-top:30px;">
-    <form action="" method="GET">
-        {{ form }}
-        <input type="submit" value="Generate!">
+
+<div class="container">
+    <form action="" class="form-horizontal" method="GET">
+        <div class="form-group">
+            {{ form }}
+            <input type="submit" class="form-control" value="Generate!">
+        </div>
     </form>
 </div>
 

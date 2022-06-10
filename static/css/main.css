@@ -1,3 +1,6 @@
-#grad {
-    background-image: linear-gradient(red, yellow);
+html,body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
+  

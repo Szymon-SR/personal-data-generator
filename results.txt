@@ -1,11 +1,11 @@
-first_name   last_name phone_number
-   Marlena       KLAJA    630744433
-      Leon   GAJKOWSKI    891849629
-    Ignacy   NADROWSKI    861098114
-   Dominik     BRYGOŁA    773971938
- Kazimiera     PARZYCH    820797736
-   Dariusz KOŁODZIŃSKI    701891203
-  Waldemar     GŁOWIAK    607264233
-    Janina        KAIM    583674487
-    Nikola       ROBAK    808252978
-     Zenon        GAIK    788708961
+first_name last_name phone_number birth_date        pesel
+  Krystian      GRAJ    695557455   4.5.1987   8705431975
+     Piotr   PACHUTA    665162036  26.2.1935 350226215510
+  Sławomir ANTOŃCZAK    741488488   3.8.1938   3808317979
+    Jagoda  GĄSIOREK    860594271   5.6.1999   9906543222
+ Tymoteusz    MĄKOSA    619268402  9.10.1967   6710915916
+   Mariusz    SZCZAP    732842748  24.8.1986  86082466938
+   Gabriel  BOBOWSKI    676579673 23.11.1934 341123603510
+    Alicja PIECHOCKA    548506217  26.9.1949  49092643268
+     Daria  KITOWSKA    811350838 20.11.1983  83112030842
+   Marzena       HUK    666992838  28.5.1993  93052895526
