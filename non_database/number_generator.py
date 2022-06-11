@@ -14,6 +14,7 @@ class PeselGenerator:
         self.pesel = self.generate_pesel()
 
     def generate_birth_date(self) -> None:
+        """Generate a birth date in between requested min_age and max_age - in age we only consider years"""
         self.year = random.randint(date.today().year - self.max_age, date.today().year - self.min_age)
         self.month = random.randint(1, 12)
         
@@ -22,16 +23,18 @@ class PeselGenerator:
         self.day = random.randint(1, month_length)
 
     def generate_pesel(self) -> str:
-        """Generate PESEL number based on person's gender and birth date"""
+        """Generate PESEL number based on person's gender and birth date, using the real algorithm"""
         result = ''
+        # following comments are in polish because I copied them from wikipedia page about PESEL, sorry
 
         if self.year < 2000:
             # dla osób urodzonych w latach 1900 do 1999 – miesiąc zapisywany jest w sposób naturalny,
             # tzn. dwucyfrowo od 01 do 12
-            result += f"{str(self.year)[2:]}{self.month:02d}{self.day}"
+            result += f"{str(self.year)[2:]}{self.month:02d}{self.day:02d}"
+
         else:
             # dla osób urodzonych w innych latach niż 1900–1999 dodawane są do numeru miesiąca wielkości
-            result += f"{str(self.year)[2:]}{self.month + 20}{self.day}"
+            result += f"{str(self.year)[2:]}{self.month + 20}{self.day:02d}"
 
         # series number
         result += str(random.randint(100, 999))
@@ -46,7 +49,18 @@ class PeselGenerator:
         else:
             result += str(random.choice(gender_digits['female']))
 
-        result += str(random.randint(1, 10))
+        # last digit - control number
+
+        # dla kolejnych dziesięciu cyfr identyfikatora PESEL obliczany jest iloczyn cyfry i jej wagi, obliczana jest suma tych iloczynów
+        WEIGHTS = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1]
+        S_number = sum([int(digit) * WEIGHTS[int(digit)] for digit in result])
+
+        M_number = S_number % 10
+
+        if M_number == 0:
+            result += str(M_number)
+        else:
+            result += str(10 - M_number)
 
         return result
 
@@ -56,7 +70,7 @@ class PeselGenerator:
 
 
 def generate_house_number():
-    """Generate a string house or apartment number"""
+    """Generate a string house or apartment number, either one number or with flat number after slash"""
     
     # base number is a positive integer smaller than 100
     result = str(random.randint(1, 99))
