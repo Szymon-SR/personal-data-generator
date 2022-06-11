@@ -21,13 +21,12 @@ ALL_TRUE_DICT = {
     "gen_voivodeship": True,
 }
 
+
 def random_first_name(male: bool) -> str:
     """Get one random first name from the database"""
 
     # get a list of all ids filtered by gender
-    first_name_ids = FirstName.objects.filter(is_male=male).values_list(
-        "id", flat=True
-    )
+    first_name_ids = FirstName.objects.filter(is_male=male).values_list("id", flat=True)
 
     # pick a random id from the list and get the object with this id
     first_name_obj = FirstName.objects.get(id=random.choice(first_name_ids))

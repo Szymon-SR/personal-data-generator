@@ -2,8 +2,10 @@
 
 from django.db import models
 
+
 class AbstractName(models.Model):
     """Abstract model representing a name"""
+
     name = models.TextField(max_length=100)
 
     class Meta:
@@ -40,12 +42,12 @@ class LastName(AbstractName):
     And last names can also be gender neutral
     """
 
-
     class Gender(models.TextChoices):
         """Class to provide options for text choices field"""
-        MALE = 'M'
-        FEMALE = 'F'
-        NEUTRAL = 'N'
+
+        MALE = "M"
+        FEMALE = "F"
+        NEUTRAL = "N"
 
     # in the database, only 'M', 'F' or 'N' is saved
     matching_gender = models.CharField(

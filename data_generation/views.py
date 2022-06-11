@@ -36,7 +36,6 @@ def generation_view(request):
     form_min_age = 18
     form_max_age = 100
 
-
     if request.method == "GET" and form.is_valid():
         form_gender = form.cleaned_data["gender"]
         # gender is' both', 'female' or 'male'
@@ -86,20 +85,22 @@ def file_view(request):
         # set file name and use function to export data
         if form_datatype == "txt":
             filepath = exporter.export_data_to_txt()
-            filename = f'{base_filename}txt'
+            filename = f"{base_filename}txt"
         elif form_datatype == "csv":
             filepath = exporter.export_data_to_csv()
-            filename = f'{base_filename}csv'
+            filename = f"{base_filename}csv"
         elif form_datatype == "excel":
             filepath = exporter.export_data_to_excel()
-            filename = f'{base_filename}xlsx'
+            filename = f"{base_filename}xlsx"
 
         # previous functions created a file and returned a path, retrieve this file by path and serve to user
-        with open(filepath, 'rb') as f:
+        with open(filepath, "rb") as f:
             file = f.read()
             response = HttpResponse(file)
             if form_datatype == "excel":
-                response['Content-Type'] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                response[
+                    "Content-Type"
+                ] = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             response["Content-Disposition"] = f"attachment; filename={filename}"
 
             return response

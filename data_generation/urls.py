@@ -21,14 +21,14 @@ from names import views as names_views
 from .views import generation_view, home_view, file_view, about_view
 
 urlpatterns = [
-    path('', home_view, name='home'),
-    path('generation/', generation_view, name='generation'),
-    path('generation/gender<str:gender>/', generation_view, name='generation_gender'),
-    path('to_file/', file_view, name='to_file'),
-    path('admin/', admin.site.urls),
-    path('about/', about_view, name='about'),
-    path('post_addresses/create', addresses_views.post_address_create_view),
-    path('streets/create', addresses_views.street_address_create_view),
-    path('first_names/create', names_views.first_name_create_view),
-    path('last_names/create', names_views.last_name_create_view),
+    path("", home_view, name="home"),
+    path("generation/", generation_view, name="generation"),
+    path("generation/gender<str:gender>/", generation_view, name="generation_gender"),
+    path("to_file/", file_view, name="to_file"),
+    path("admin/", admin.site.urls),
+    path("about/", about_view, name="about"),
+    path("post_addresses/create", addresses_views.post_address_create_view),
+    path("streets/create", addresses_views.street_address_create_view),
+    path("first_names/create", names_views.first_name_create_view),
+    path("last_names/create", names_views.last_name_create_view),
 ]

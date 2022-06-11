@@ -6,14 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('addresses', '0001_initial'),
+        ("addresses", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='postaddress',
-            name='city',
-            field=models.TextField(default='Warszawa'),
+            model_name="postaddress",
+            name="city",
+            field=models.TextField(default="Warszawa"),
             preserve_default=False,
         ),
     ]
