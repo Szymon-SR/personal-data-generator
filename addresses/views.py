@@ -1,8 +1,7 @@
-from django.shortcuts import render
 from .models import PostAddress, Street
 
 def post_address_create_view(request):
-    # creating a new object
+    """View for creating a new post address object"""
     context = {}
 
     if request.method == "POST":
@@ -16,11 +15,9 @@ def post_address_create_view(request):
         context['object'] = post_address_obj
         context['created'] = True
 
-    # return render()
-
 
 def street_address_create_view(request):
-    # creating a new object
+    """View for creating a new street object"""
     context = {}
 
     if request.method == "POST":
@@ -30,5 +27,3 @@ def street_address_create_view(request):
 
         context['object'] = street_obj
         context['created'] = True
-
-    # return render()

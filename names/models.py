@@ -1,9 +1,14 @@
+"""Django models connected to people's name data"""
+
 from django.db import models
 
 class AbstractName(models.Model):
+    """Abstract model representing a name"""
     name = models.TextField(max_length=100)
 
     class Meta:
+        # we set abstract to True, this model can't have objects
+        # and can't exist in the database
         abstract = True
 
     # abstract name is not correct for either males or females
@@ -15,6 +20,8 @@ class AbstractName(models.Model):
 
 
 class FirstName(AbstractName):
+    """Model inheriting from abstract name, representing first name"""
+
     is_male = models.BooleanField()
 
     def for_females(self):
@@ -27,12 +34,19 @@ class FirstName(AbstractName):
 
 
 class LastName(AbstractName):
-    
+    """
+    Model inheriting from abstract name, representing first name.
+    They are represented differently, because first names can be either male or female
+    And last names can also be gender neutral
+    """
+
+
     class Gender(models.TextChoices):
+        """Class to provide options for text choices field"""
         MALE = 'M'
         FEMALE = 'F'
         NEUTRAL = 'N'
-    
+
     # in the database, only 'M', 'F' or 'N' is saved
     matching_gender = models.CharField(
         max_length=1,

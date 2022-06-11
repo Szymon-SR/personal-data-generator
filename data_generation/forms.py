@@ -1,3 +1,5 @@
+"""Forms to use in our web app to get input from the user. There are used both in generating a single person and generating to a file."""
+
 from django import forms
 
 GENDER_CHOICES = (
@@ -14,17 +16,19 @@ class GenerationForm(forms.Form):
     maximal_age = forms.IntegerField(max_value=200, min_value=1, label='Maximal age')
 
     def clean(self):
+        """Clean function is included in forms.Form, i override it to check that provided minimal age is smaller than maximal age"""
+        # use forms.Form clean first
         cleaned_data = super().clean()
         minimal_age = cleaned_data.get('minimal_age')
         maximal_age = cleaned_data.get('maximal_age')
 
-        # check if valid
+        # check if minimal_age and maximal_age are correct
         if minimal_age and maximal_age:
             if minimal_age > maximal_age:
                 raise forms.ValidationError("Maximal age has to be greater than minimal age.")
 
 
-
+# possible choices to pick a file type
 FILE_CHOICES = (
     ('txt', 'TXT file'),
     ('csv', 'CSV file'),
@@ -35,9 +39,11 @@ FILE_CHOICES = (
 class ToFileForm(forms.Form):
     """Django Form used to generate html forms, used to set parameters in generating data to file"""
 
+    # number of rows is number of people generated
     number_of_rows = forms.IntegerField(max_value=1000, min_value=1, label='Number of people to generate')
     file_type = forms.ChoiceField(choices=FILE_CHOICES, label='Type of file', initial='txt')
-    
+
+    # following are tick boxes, they tell us which data user wants
     gen_first_name = forms.BooleanField(label="First name", initial=True, required=False)
     gen_last_name = forms.BooleanField(label="Last name", initial=True, required=False)
     gen_phone = forms.BooleanField(label="Phone number", initial=True, required=False)

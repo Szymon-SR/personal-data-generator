@@ -1,4 +1,6 @@
-from django.http import HttpResponse, FileResponse
+"""Views for our web application"""
+
+from django.http import HttpResponse
 from django.template.loader import render_to_string
 
 from .forms import GenerationForm, ToFileForm
@@ -9,12 +11,14 @@ from .person_creation import generate_person_dict
 def home_view(request):
     """View for the main page of the website"""
 
+    # render html with empty context
     return HttpResponse(render_to_string("home-view.html", {}))
 
 
 def about_view(request):
     """View for the 'about' page of the website, with some information"""
 
+    # render html with empty context
     return HttpResponse(render_to_string("about-view.html", {}))
 
 
@@ -39,6 +43,7 @@ def generation_view(request):
         form_min_age = form.cleaned_data["minimal_age"]
         form_max_age = form.cleaned_data["maximal_age"]
 
+    # use a function generating all the data needed
     person_data = generate_person_dict(
         requested_gender=form_gender,
         all_values_requested=True,
@@ -52,6 +57,7 @@ def generation_view(request):
     # add the personal data to context
     context.update(person_data)
 
+    # render html
     HTML_STRING = render_to_string("generation-view.html", context=context)
 
     return HttpResponse(HTML_STRING)
@@ -77,6 +83,7 @@ def file_view(request):
         base_filename = "personal_data."
         exporter = FileExporter(all_people)
 
+        # set file name and use function to export data
         if form_datatype == "txt":
             filepath = exporter.export_data_to_txt()
             filename = f'{base_filename}txt'
@@ -87,14 +94,15 @@ def file_view(request):
             filepath = exporter.export_data_to_excel()
             filename = f'{base_filename}xlsx'
 
+        # previous functions created a file and returned a path, retrieve this file by path and serve to user
+        with open(filepath, 'rb') as f:
+            file = f.read()
+            response = HttpResponse(file)
+            if form_datatype == "excel":
+                response['Content-Type'] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            response["Content-Disposition"] = f"attachment; filename={filename}"
 
-        file = open(filepath, 'rb').read()
-        response = HttpResponse(file)
-        if form_datatype == "excel":
-            response['Content-Type'] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-        response["Content-Disposition"] = f"attachment; filename={filename}"
-
-        return response
+            return response
 
     context = {
         "form": form,

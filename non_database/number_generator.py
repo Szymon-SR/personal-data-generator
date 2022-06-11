@@ -4,8 +4,9 @@ from datetime import date
 from calendar import monthrange
 
 
-
 class PeselGenerator:
+    """A class that can generate birth date and pesel number, as birth date is strictly required for PESEL generation"""
+
     def __init__(self, is_male: bool, min_age: int, max_age: int) -> None:
         self.is_male = is_male
         self.min_age = min_age
@@ -15,16 +16,18 @@ class PeselGenerator:
 
     def generate_birth_date(self) -> None:
         """Generate a birth date in between requested min_age and max_age - in age we only consider years"""
-        self.year = random.randint(date.today().year - self.max_age, date.today().year - self.min_age)
+        self.year = random.randint(
+            date.today().year - self.max_age, date.today().year - self.min_age
+        )
         self.month = random.randint(1, 12)
-        
+
         # monthrange gives us the number of days in a month, takes leap years in consideration
         month_length = monthrange(self.year, self.month)[1]
         self.day = random.randint(1, month_length)
 
     def generate_pesel(self) -> str:
         """Generate PESEL number based on person's gender and birth date, using the real algorithm"""
-        result = ''
+        result = ""
         # following comments are in polish because I copied them from wikipedia page about PESEL, sorry
 
         if self.year < 2000:
@@ -40,18 +43,22 @@ class PeselGenerator:
         result += str(random.randint(100, 999))
 
         # Informacja o płci osoby, której zestaw informacji jest identyfikowany,
-        # zawarta jest na 10. (przedostatniej) pozycji numeru PESEL. 
-        
-        gender_digits = {'male': [x for x in range(0, 10) if x % 2 == 1], 'female': [x for x in range(0, 10) if x % 2 == 0]}
+        # zawarta jest na 10. (przedostatniej) pozycji numeru PESEL.
+
+        gender_digits = {
+            "male": [x for x in range(0, 10) if x % 2 == 1],
+            "female": [x for x in range(0, 10) if x % 2 == 0],
+        }
 
         if self.is_male:
-            result += str(random.choice(gender_digits['male']))
+            result += str(random.choice(gender_digits["male"]))
         else:
-            result += str(random.choice(gender_digits['female']))
+            result += str(random.choice(gender_digits["female"]))
 
         # last digit - control number
 
-        # dla kolejnych dziesięciu cyfr identyfikatora PESEL obliczany jest iloczyn cyfry i jej wagi, obliczana jest suma tych iloczynów
+        # dla kolejnych dziesięciu cyfr identyfikatora PESEL obliczany jest iloczyn cyfry i jej wagi,
+        # obliczana jest suma tych iloczynów
         WEIGHTS = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1]
         S_number = sum([int(digit) * WEIGHTS[int(digit)] for digit in result])
 
@@ -64,14 +71,14 @@ class PeselGenerator:
 
         return result
 
-
     def get_formatted_birth_date(self) -> str:
-        return f'{self.day}.{self.month}.{self.year}'
+        """Format birth date, example: 31.12.1999"""
+        return f"{self.day}.{self.month}.{self.year}"
 
 
 def generate_house_number():
     """Generate a string house or apartment number, either one number or with flat number after slash"""
-    
+
     # base number is a positive integer smaller than 100
     result = str(random.randint(1, 99))
 
@@ -81,7 +88,7 @@ def generate_house_number():
 
     if random.randint(1, 2) == 1:
         # add an apartment number
-        result += f' / {random.randint(1, 99)}'
+        result += f" / {random.randint(1, 99)}"
 
     return result
 
@@ -89,4 +96,3 @@ def generate_house_number():
 def generate_phone_number():
     """Generate a string phone number"""
     return str(random.randint(500000000, 900000000))
-

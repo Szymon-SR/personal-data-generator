@@ -1,5 +1,6 @@
+"""All data comes together here, we randomize / get from the database only the requested data"""
+
 import random
-from enum import Enum
 
 from addresses.models import PostAddress, Street
 from names.models import FirstName, LastName

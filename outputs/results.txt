@@ -1,22 +1,11 @@
-first_name  last_name birth_date       pesel
-    Sandra   BOROWICZ  21.1.1923 23012157001
-  Mirosław  DEMBOWSKI  17.6.1928 28061780132
-  Wiktoria   NAREWSKA  10.8.1993 93081084245
-      Olga JARANOWSKA  15.8.1938 38081575667
-Małgorzata RAMOTOWSKA   7.9.1946 46090734683
-   Wiesław     SETLAK  31.1.1965 65013176735
-  Elżbieta     ZIELEŃ   7.7.1924 24070740921
-   Bartosz   PODLECKI  20.2.1965 65022055434
-   Mikołaj   HELIŃSKI  26.8.1946 46082612717
-   Mikołaj      JONAK  29.7.1931 31072934012
-  Genowefa     LIBERA 14.12.1986 86121498001
-    Bogdan KONDZIOŁKA  7.12.2003 03320712035
-    Bogdan   PUSTUŁKA  18.8.1957 57081824670
-Aleksander    TRĘBACZ  14.6.1954 54061443371
-     Artur     GAPSKI 21.11.1933 33112138356
-   Tadeusz  DIACHENKO  28.1.1942 42012838035
-   Dariusz      WANAT  25.2.1947 47022589915
-   Liliana    KOCEMBA 28.12.1991 91122875364
-   Zygmunt  BUCHALSKI   3.9.1957 57090350939
- Agnieszka ŚMIETAŃSKA   7.5.1957 57050766802
-     Łucja     TABAKA   4.9.1990 90090458360
+first_name last_name phone_number birth_date       pesel                street_name house_number post_code      city
+     Julia MARKOWICZ    552236113  23.7.1972 72072372886 Konstantego Klemensa Gucwy      48 / 63    03-666  Warszawa
+ Marcelina    PISKOR    620754086 17.12.1988 88121749848           Henryka Londnera      84 / 28    43-603  Jaworzno
+    Stefan   BARGIEŁ    676512494   7.8.2001 01280796913                  Konieczki           52    03-623  Warszawa
+Aleksander   PODKOWA    532164214  24.3.1945 45032480651                    Falęcka     59g / 94    45-070     Opole
+ Magdalena  WARDZIAK    528319165  15.2.1944 44021560420             Pod Rozterkiem     81e / 67    85-383 Bydgoszcz
+   Mateusz   PILAREK    797605056  13.3.1980 80031317076                 Oszczepowa      47 / 25    81-111    Gdynia
+    Serhii     SZEJA    695047431  27.8.1939 39082743819                 Ruszczyzna      62 / 74    91-203      Łódź
+   Mariusz     KUKLA    599192971 10.10.1992 92101064393                  Pionierów           95    43-607  Jaworzno
+    Marcin     MAJEK    779714899  14.3.1987 87031490172                 Skrzypcowa       6 / 53    85-406 Bydgoszcz
+     Irena  JANASZEK    718896574  26.5.1980 80052674086               Białego Dębu          82f    51-671   Wrocław
