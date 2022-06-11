@@ -1,6 +1,6 @@
 ## Django app which generates personal data based on Polish addresses and Polish names.
 
-![image](./static/images/screenshot.png)
+![image](./static/images/screen.jpg)
 
 **Generated data:**
  - Postcodes with city, county and voivodeship (42345 records in the database - all polish postcodes)
