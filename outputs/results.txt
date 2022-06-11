@@ -1,11 +1,11 @@
-first_name last_name phone_number birth_date       pesel                street_name house_number post_code      city
-     Julia MARKOWICZ    552236113  23.7.1972 72072372886 Konstantego Klemensa Gucwy      48 / 63    03-666  Warszawa
- Marcelina    PISKOR    620754086 17.12.1988 88121749848           Henryka Londnera      84 / 28    43-603  Jaworzno
-    Stefan   BARGIEŁ    676512494   7.8.2001 01280796913                  Konieczki           52    03-623  Warszawa
-Aleksander   PODKOWA    532164214  24.3.1945 45032480651                    Falęcka     59g / 94    45-070     Opole
- Magdalena  WARDZIAK    528319165  15.2.1944 44021560420             Pod Rozterkiem     81e / 67    85-383 Bydgoszcz
-   Mateusz   PILAREK    797605056  13.3.1980 80031317076                 Oszczepowa      47 / 25    81-111    Gdynia
-    Serhii     SZEJA    695047431  27.8.1939 39082743819                 Ruszczyzna      62 / 74    91-203      Łódź
-   Mariusz     KUKLA    599192971 10.10.1992 92101064393                  Pionierów           95    43-607  Jaworzno
-    Marcin     MAJEK    779714899  14.3.1987 87031490172                 Skrzypcowa       6 / 53    85-406 Bydgoszcz
-     Irena  JANASZEK    718896574  26.5.1980 80052674086               Białego Dębu          82f    51-671   Wrocław
+first_name  last_name phone_number birth_date       pesel            street_name house_number post_code      city
+  Radosław    SALAMON    552603572  11.8.1994 94081123930                  Turka           39    93-349      Łódź
+  Krystyna WIERZBICKA    579266490  4.12.1958 58120427520              Gawryłowa           28    91-115      Łódź
+    Dorota  KOROLCZUK    711671933  21.9.1925 25092182005               Zgaślika      79 / 76    00-281  Warszawa
+   Ryszard    MLECZEK    881094596  16.1.1994 94011622010             Poli Negri          59c    21-046   Świdnik
+ Marcelina     ROSIEK    772557391  16.7.1928 28071672267             Bledzewska           37    94-113      Łódź
+   Henryka      MIKOŚ    633854841  10.1.1990 90011010323   Tomasza Wawrzeckiego      5d / 93    03-640  Warszawa
+   Dariusz    OLSZOWY    526267963  7.10.1922 22100755770                Pilicka          92b    85-409 Bydgoszcz
+Władysława    KONDRAT    877240307  15.4.1948 48041564288           Jaroszowicka      43 / 72    91-211      Łódź
+     Józef   ŁĘCZYCKI    536679599  26.3.1971 71032681396                  Polna      63 / 43    80-734    Gdańsk
+       Iga     HERNAS    608648409  7.11.1951 51110771261 Włodzimierza Kalskiego        7 / 5    00-736  Warszawa
