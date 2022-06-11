@@ -11,9 +11,10 @@ def home_view(request):
 
     return HttpResponse(render_to_string("home-view.html", {}))
 
+
 def about_view(request):
     """View for the 'about' page of the website, with some information"""
-    
+
     return HttpResponse(render_to_string("about-view.html", {}))
 
 
@@ -23,15 +24,27 @@ def generation_view(request):
     # initializing a form object to get input from user
     form = GenerationForm(request.GET or None)
     form.fields["gender"].initial = "both"
+    form.fields["minimal_age"].initial = 18
+    form.fields["maximal_age"].initial = 100
 
     # by default, generate female and male names
     form_gender = "both"
+    form_min_age = 18
+    form_max_age = 100
+
 
     if request.method == "GET" and form.is_valid():
         form_gender = form.cleaned_data["gender"]
         # gender is' both', 'female' or 'male'
+        form_min_age = form.cleaned_data["minimal_age"]
+        form_max_age = form.cleaned_data["maximal_age"]
 
-    person_data = generate_person_dict(requested_gender=form_gender, all_values_requested=True)
+    person_data = generate_person_dict(
+        requested_gender=form_gender,
+        all_values_requested=True,
+        min_age=form_min_age,
+        max_age=form_max_age,
+    )
 
     context = {
         "form": form,

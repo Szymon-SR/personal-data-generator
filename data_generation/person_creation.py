@@ -68,6 +68,8 @@ def generate_person_dict(
     requested_gender: str = "both",
     requested_values: dict = {},
     all_values_requested: bool = False,
+    min_age: int = 18,
+    max_age: int = 100,
 ):
     """
     Function to generate one person based on requested attributes and return a dictionary with all the data
@@ -103,7 +105,7 @@ def generate_person_dict(
         person_dict["phone_number"] = number_generator.generate_phone_number()
 
     if requested_values["gen_pesel"] or requested_values["gen_birth"]:
-        pesel_gen = number_generator.PeselGenerator(male_requested)
+        pesel_gen = number_generator.PeselGenerator(male_requested, min_age, max_age)
 
         if requested_values["gen_birth"]:
             person_dict["birth_date"] = pesel_gen.get_formatted_birth_date()

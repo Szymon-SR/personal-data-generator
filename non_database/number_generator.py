@@ -3,16 +3,18 @@ import string
 from datetime import date
 from calendar import monthrange
 
-MINIMAL_BIRTH_YEAR = 1930
+
 
 class PeselGenerator:
-    def __init__(self, is_male: bool) -> None:
+    def __init__(self, is_male: bool, min_age: int, max_age: int) -> None:
         self.is_male = is_male
+        self.min_age = min_age
+        self.max_age = max_age
         self.generate_birth_date()
         self.pesel = self.generate_pesel()
 
     def generate_birth_date(self) -> None:
-        self.year = random.randint(MINIMAL_BIRTH_YEAR, date.today().year - 18)
+        self.year = random.randint(date.today().year - self.max_age, date.today().year - self.min_age)
         self.month = random.randint(1, 12)
         
         # monthrange gives us the number of days in a month, takes leap years in consideration

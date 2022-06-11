@@ -10,6 +10,19 @@ class GenerationForm(forms.Form):
     """Django Form used to generate html forms, used to set parameters in generating one person"""
 
     gender = forms.ChoiceField(choices=GENDER_CHOICES, label='Gender to generate', initial='both')
+    minimal_age = forms.IntegerField(max_value=200, min_value=1, label='Minimal age')
+    maximal_age = forms.IntegerField(max_value=200, min_value=1, label='Maximal age')
+
+    def clean(self):
+        cleaned_data = super().clean()
+        minimal_age = cleaned_data.get('minimal_age')
+        maximal_age = cleaned_data.get('maximal_age')
+
+        # check if valid
+        if minimal_age and maximal_age:
+            if minimal_age > maximal_age:
+                raise forms.ValidationError("Maximal age has to be greater than minimal age.")
+
 
 
 FILE_CHOICES = (
