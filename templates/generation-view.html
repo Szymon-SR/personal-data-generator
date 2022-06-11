@@ -3,16 +3,18 @@
 {% block content %}
 
 
-<div class="container">
+<div style="margin-top:30px;" class="container">
     <form action="" class="form-horizontal" method="GET">
         <div class="form-group">
-            {{ form }}
+            {{ form.as_p }}
+        </div>
+        <div class="row col-6">
             <input type="submit" class="form-control" value="Generate!">
         </div>
     </form>
 </div>
 
-<div class="container">
+<div style="margin-top:30px;" class="container">
     <h2>Personal data</h2>
     <table class="table table-hover ">
         <tr>

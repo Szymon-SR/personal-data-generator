@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<div style="width: 33%; margin-top: 30px;" class="container p-3 border bg-light rounded ">
+    <h1>Generating data on a website</h1>
+    <p>App generates personal data based on Polish addresses and Polish names.</p>
+    <p>It's posible to view data in browser or export to a file.</p>
+    <p>Generated data:
+    <p>
+    <ul>
+        <li>Postcodes with city, county and voivodeship (42345 records in the database - all polish postcodes)</li>
+        <li>Street names (29310 records in the database)</li>
+        <li>First names (top 100 most popular for males and females as of 24.01.2022)</li>
+        <li>Last names (top 10000 most popular for males and females as of 24.01.2022)</li>
+        <li>Phone numbers</li>
+        <li>Birth dates</li>
+        <li>PESEL numbers based on birth dates</li>
+    </ul>
+    <p>Use cases:</p>
+    <ul>
+        <li>generating data to test your software</li>
+        <li>generating data to later import to other programs, like MS Access</li>
+        <li>getting a random names for different purposes if you are not creative</li>
+    </ul>
+    <p>App was created using Python, Django and Bootstrap.</p>
+</div>
+
+{% endblock content %}

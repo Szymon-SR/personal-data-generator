@@ -1,11 +1,11 @@
-first_name last_name phone_number birth_date        pesel
-  Krystian      GRAJ    695557455   4.5.1987   8705431975
-     Piotr   PACHUTA    665162036  26.2.1935 350226215510
-  Sławomir ANTOŃCZAK    741488488   3.8.1938   3808317979
-    Jagoda  GĄSIOREK    860594271   5.6.1999   9906543222
- Tymoteusz    MĄKOSA    619268402  9.10.1967   6710915916
-   Mariusz    SZCZAP    732842748  24.8.1986  86082466938
-   Gabriel  BOBOWSKI    676579673 23.11.1934 341123603510
-    Alicja PIECHOCKA    548506217  26.9.1949  49092643268
-     Daria  KITOWSKA    811350838 20.11.1983  83112030842
-   Marzena       HUK    666992838  28.5.1993  93052895526
+first_name    last_name phone_number birth_date        pesel          street_name house_number post_code         city                              county                    voivodeship
+       Iga       SPOREK    576153829  14.2.1953 530214958010             Lotnicza      46 / 95    38-316       Wysowa                     Powiat gorlicki        Województwo małopolskie
+       Jan  CHMIELNICKI    807675106  11.7.1997  97071134292    Kamila Giżyckiego     79c / 90    53-126      Wrocław   Miasto Wrocław na prawach powiatu       Województwo dolnośląskie
+    Marian        GALUS    648494922  18.5.1969  69051865251            Kozielska          16f    59-817 Zaręba Górna                     Powiat lubański       Województwo dolnośląskie
+      Pola      HERMANN    708857065  19.9.1931  31091962741            Taczowska           49    75-525     Koszalin  Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie
+    Ignacy        KIJAK    507664898  15.4.1985  85041567636             Minutowa      92 / 36    20-111       Lublin    Miasto Lublin na prawach powiatu          Województwo lubelskie
+     Marek        TRUTY    678272527 17.10.1989  89101771297          Wituchowska     36g / 26    85-339    Bydgoszcz Miasto Bydgoszcz na prawach powiatu Województwo kujawsko-pomorskie
+   Mikołaj     CIECIURA    580490799  31.5.1982  82053198416 Floriana Kotowskiego      28 / 55    75-384     Koszalin  Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie
+ Michalina       GRABOŃ    691455165 22.12.1987  87122261829 Stanisława Szarmacha     52g / 22    91-511         Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie
+  Angelika JĘDRZEJOWSKA    805268306   9.8.2002   0228995566             Tokarnia       3 / 96    60-651       Poznań    Miasto Poznań na prawach powiatu      Województwo wielkopolskie
+    Dorota       PĘCZEK    899420466  14.4.1956  56041472087                 Wlot      87 / 23    92-611         Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie

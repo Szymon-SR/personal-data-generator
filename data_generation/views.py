@@ -11,6 +11,11 @@ def home_view(request):
 
     return HttpResponse(render_to_string("home-view.html", {}))
 
+def about_view(request):
+    """View for the 'about' page of the website, with some information"""
+    
+    return HttpResponse(render_to_string("about-view.html", {}))
+
 
 def generation_view(request):
     """View for generating one person"""

@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 
+
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/file-view.css' %}">
 
+<h1>Select number of people, file type and fields to generate</h1>
 
-<div style="margin-top:30px;">
-    <p>Select number of people, file type and fields to generate</p>
+<div style="width: 33%;" class="container p-3 border bg-light rounded ">
     <form action="" method="GET">
         {{ form.as_p }}
         <input type="submit" value="Export!">
     </form>
 </div>
-<br>
 
 
 {% endblock content %}
