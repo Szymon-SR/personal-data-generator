@@ -28,6 +28,7 @@ class GenerationForm(forms.Form):
 FILE_CHOICES = (
     ('txt', 'TXT file'),
     ('csv', 'CSV file'),
+    ('excel', 'EXCEL file')
 )
 
 

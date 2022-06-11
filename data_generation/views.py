@@ -2,7 +2,7 @@ from django.http import HttpResponse, FileResponse
 from django.template.loader import render_to_string
 
 from .forms import GenerationForm, ToFileForm
-from .exporting import export_data_to_csv, export_data_to_txt
+from .exporting import FileExporter
 from .person_creation import generate_person_dict
 
 
@@ -74,15 +74,24 @@ def file_view(request):
             for _ in range(form_number_of_rows)
         ]
 
-        if form_datatype == "txt":
-            filepath = export_data_to_txt(all_people)
-            filename = "personal_data.txt"
-        else:
-            filepath = export_data_to_csv(all_people)
-            filename = "personal_data.csv"
+        base_filename = "personal_data."
+        exporter = FileExporter(all_people)
 
-        file = open(filepath).read()
-        response = FileResponse(file)
+        if form_datatype == "txt":
+            filepath = exporter.export_data_to_txt()
+            filename = f'{base_filename}txt'
+        elif form_datatype == "csv":
+            filepath = exporter.export_data_to_csv()
+            filename = f'{base_filename}csv'
+        elif form_datatype == "excel":
+            filepath = exporter.export_data_to_excel()
+            filename = f'{base_filename}xlsx'
+
+
+        file = open(filepath, 'rb').read()
+        response = HttpResponse(file)
+        if form_datatype == "excel":
+            response['Content-Type'] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
         response["Content-Disposition"] = f"attachment; filename={filename}"
 
         return response

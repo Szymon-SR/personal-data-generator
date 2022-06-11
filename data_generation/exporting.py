@@ -1,21 +1,33 @@
 import pandas as pd
-
-CSV_PATH = 'results.csv'
-TXT_PATH = 'results.txt'
+import typing
 
 
-def export_data_to_csv(list_of_rows):
-    df = pd.DataFrame.from_dict(list_of_rows)
-    df.to_csv(CSV_PATH, index=False, header=True)
+class FileExporter:
+    BASE_PATH = "outputs/"
+    CSV_PATH = f"{BASE_PATH}results.csv"
+    TXT_PATH = f"{BASE_PATH}results.txt"
+    XLSX_PATH = f"{BASE_PATH}results.xlsx"
 
-    return CSV_PATH
+    def __init__(self, list_of_rows: typing.List) -> None:
+        self.list_of_rows = list_of_rows
+        self.df = pd.DataFrame.from_dict(self.list_of_rows)
 
+    def export_data_to_csv(self):
+        self.df.to_csv(FileExporter.CSV_PATH, index=False, header=True)
 
-def export_data_to_txt(list_of_rows):
-    df = pd.DataFrame.from_dict(list_of_rows)
-    df_string = df.to_string(index=False, header=True)
+        return FileExporter.CSV_PATH
 
-    with open(TXT_PATH, 'w') as f:
-        f.write(df_string)
+    def export_data_to_txt(self):
+        df_string = self.df.to_string(index=False, header=True)
 
-    return TXT_PATH
+        with open(FileExporter.TXT_PATH, "w") as f:
+            f.write(df_string)
+
+        return FileExporter.TXT_PATH
+
+    def export_data_to_excel(self):
+        self.df.to_excel(
+            FileExporter.XLSX_PATH, sheet_name="Generated", index=False, header=True
+        )
+
+        return FileExporter.XLSX_PATH

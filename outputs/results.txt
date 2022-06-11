@@ -1,0 +1,5 @@
+first_name   last_name phone_number birth_date       pesel        street_name house_number post_code      city                           county              voivodeship
+      Adam       ŁABUZ    572213159   1.6.1979  7906136535 gen. Iwana Połbina      38 / 78    92-774      Łódź   Miasto Łódź na prawach powiatu      Województwo łódzkie
+   Andrzej     POPCZYK    763379931  7.12.1987  8712750116              Płosa     70e / 79    59-500 Złotoryja               Powiat złotoryjski Województwo dolnośląskie
+    Helena CHALIMONIUK    808439423  8.11.1922 22118893610        Nad Goszczą      17 / 90    81-015    Gdynia Miasto Gdynia na prawach powiatu    Województwo pomorskie
+  Krystyna      SAROTA    560200288  23.3.1924 24032384723        Berwińskich      1c / 60    47-445  Racibórz                Powiat raciborski      Województwo śląskie
