@@ -29,3 +29,8 @@
 ├── static - Static files
 
 ├── templates - HTML templates
+
+**Requirements to run**
+All packages are specified in requirements.txt
+
+> pip install -r requirements.txt
