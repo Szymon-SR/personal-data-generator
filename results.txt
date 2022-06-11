@@ -1,11 +1,11 @@
-first_name    last_name phone_number birth_date        pesel          street_name house_number post_code         city                              county                    voivodeship
-       Iga       SPOREK    576153829  14.2.1953 530214958010             Lotnicza      46 / 95    38-316       Wysowa                     Powiat gorlicki        Województwo małopolskie
-       Jan  CHMIELNICKI    807675106  11.7.1997  97071134292    Kamila Giżyckiego     79c / 90    53-126      Wrocław   Miasto Wrocław na prawach powiatu       Województwo dolnośląskie
-    Marian        GALUS    648494922  18.5.1969  69051865251            Kozielska          16f    59-817 Zaręba Górna                     Powiat lubański       Województwo dolnośląskie
-      Pola      HERMANN    708857065  19.9.1931  31091962741            Taczowska           49    75-525     Koszalin  Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie
-    Ignacy        KIJAK    507664898  15.4.1985  85041567636             Minutowa      92 / 36    20-111       Lublin    Miasto Lublin na prawach powiatu          Województwo lubelskie
-     Marek        TRUTY    678272527 17.10.1989  89101771297          Wituchowska     36g / 26    85-339    Bydgoszcz Miasto Bydgoszcz na prawach powiatu Województwo kujawsko-pomorskie
-   Mikołaj     CIECIURA    580490799  31.5.1982  82053198416 Floriana Kotowskiego      28 / 55    75-384     Koszalin  Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie
- Michalina       GRABOŃ    691455165 22.12.1987  87122261829 Stanisława Szarmacha     52g / 22    91-511         Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie
-  Angelika JĘDRZEJOWSKA    805268306   9.8.2002   0228995566             Tokarnia       3 / 96    60-651       Poznań    Miasto Poznań na prawach powiatu      Województwo wielkopolskie
-    Dorota       PĘCZEK    899420466  14.4.1956  56041472087                 Wlot      87 / 23    92-611         Łódź      Miasto Łódź na prawach powiatu            Województwo łódzkie
+first_name last_name phone_number birth_date       pesel                    street_name house_number post_code                city                                 county                    voivodeship
+  Wiktoria   GRZYWNA    598506391  21.7.1933 33072140308 Wilhelma Friedricha Grundmanna      92 / 61    26-614               Radom        Miasto Radom na prawach powiatu        Województwo mazowieckie
+ Sylwester     FIJAŁ    818340037  27.4.1999 99042761259                      Facimiech           93    62-830             Zbiersk                         Powiat kaliski      Województwo wielkopolskie
+      Maja      KUPŚ    736686360  3.10.1974  7410393783               Andrzeja Benesza      30 / 65    18-200 Wysokie Mazowieckie                Powiat wysokomazowiecki          Województwo podlaskie
+    Lucyna SIERADZAN    631043589  5.12.1958  5812530941                 Most Milenijny           96    30-898              Kraków       Miasto Kraków na prawach powiatu        Województwo małopolskie
+   Ryszard      GULA    870482691  28.3.2004 04232820392                     Plac Dzika          28e    62-212           Mieleszyn                    Powiat gnieźnieński      Województwo wielkopolskie
+       Ewa    TOMSIA    700730659  10.9.1992 92091012061            Królowej Marysieńki     27c / 98    09-210              Drobin                          Powiat płocki        Województwo mazowieckie
+    Fabian    CIOŁEK    855559733  25.6.1939 39062591973                Narcyza Rosiaka      28 / 46    45-312               Opole        Miasto Opole na prawach powiatu           Województwo opolskie
+     Rafał     POŁEĆ    802078220   2.9.1937  3709241733        Siostry Zygmunty Zimmer     36e / 40    65-127        Zielona Góra Miasto Zielona Góra na prawach powiatu           Województwo lubuskie
+    Henryk     BRZĘK    622621173   5.9.1998  9809527631                ks. Pawła Hojki           47    70-741            Szczecin     Miasto Szczecin na prawach powiatu Województwo zachodniopomorskie
+     Roman SZYPULSKI    518404235  24.7.1960 60072433318                      XXI Wieku     64c / 45    85-511           Bydgoszcz    Miasto Bydgoszcz na prawach powiatu Województwo kujawsko-pomorskie
