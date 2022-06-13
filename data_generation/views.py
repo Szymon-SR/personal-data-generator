@@ -6,12 +6,16 @@ from django.template.loader import render_to_string
 from .forms import GenerationForm, ToFileForm
 from .exporting import FileExporter
 from .person_creation import generate_person_dict
+from non_database import photo_request
 
 
 def home_view(request):
     """View for the main page of the website"""
 
-    # render html with empty context
+    # refresh the photo of the person
+    photo_request.save_generated_photo()
+
+    # render html
     return HttpResponse(render_to_string("home-view.html", {}))
 
 

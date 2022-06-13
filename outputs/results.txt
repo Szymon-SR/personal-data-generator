@@ -1,11 +1,11 @@
-first_name   last_name phone_number birth_date
-     Marek       RAJDA    537582029  8.12.1943
-     Kamil      DZIURA    649928318 27.11.1952
-    Łukasz       GRUPA    755889270  14.9.2003
-    Marcin       MUSIK    585243186  26.6.1953
-      Lena     PISKORZ    703395547  12.6.1936
-    Andrii    KWAŚNIAK    848156963   5.3.1986
-    Janina KIESZKOWSKA    545267170  24.1.1971
- Sebastian       ŚWIĘS    732998148 15.11.1923
-     Lidia    SENDECKA    771323298   1.2.1959
-     Wanda    KRZEMPEK    810633381  14.9.1975
+first_name    last_name phone_number birth_date       pesel              street_name house_number post_code         city                                 county                    voivodeship
+  Stefania      KORCZYK    703468430 30.10.1963 63103054523           Osiedle Osobie      61 / 46    26-603        Radom        Miasto Radom na prawach powiatu        Województwo mazowieckie
+   Marzena    STRZĄDAŁA    596315675  23.9.1984 84092338401                Biznesowa      52 / 77    02-620     Warszawa     Miasto Warszawa na prawach powiatu        Województwo mazowieckie
+   Urszula        CAŁUS    711687879  15.4.1933 33041514926                 Bobownia     87b / 84    52-119      Wrocław      Miasto Wrocław na prawach powiatu       Województwo dolnośląskie
+ Bogusława   STRZELECKA    634726406  29.3.1922 22032928466                 Skrzynka      88 / 95    85-132    Bydgoszcz    Miasto Bydgoszcz na prawach powiatu Województwo kujawsko-pomorskie
+ Stanisław        PĘKSA    594796302  20.8.1989 89082084937           Plac Ogrójecki            1    49-305        Brzeg                         Powiat brzeski           Województwo opolskie
+     Dawid       SŁAWEK    682397978   6.1.1962 62010694772                 Lemańska           85    65-155 Zielona Góra Miasto Zielona Góra na prawach powiatu           Województwo lubuskie
+     Tymon      ROMANOV    630756505  24.7.1987 87072454151               Muszkowska           82    24-170        Kurów                        Powiat puławski          Województwo lubelskie
+      Olga BARANKIEWICZ    547473632   8.8.1941 41080870020           Leona Chwistka      80 / 64    94-290         Łódź         Miasto Łódź na prawach powiatu            Województwo łódzkie
+  Genowefa        SAGAN    850503056  26.1.1987 87012652861 Aleksandra Starzeńskiego      87 / 11    81-131       Gdynia       Miasto Gdynia na prawach powiatu          Województwo pomorskie
+     Józef  WASIELEWSKI    654828659  3.11.1956 56110329690             Mieleszyńska          69f    75-581     Koszalin     Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie

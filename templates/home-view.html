@@ -2,14 +2,24 @@
 
 {% block content %}
 {% load static %}
-<div style="margin-top:30px;" class="container">
+<div style="margin-top:30px;" class="h-100 d-flex align-items-center justify-content-center">
     <a href="{% url 'generation' %}">
         <button type="button" class="btn btn-dark btn-lg">Generate one person</button>
     </a>
 </div>
-<div style="margin-top:30px;" class="container">
+<div style="margin-top:30px;" class="h-100 d-flex align-items-center justify-content-center">
     <a href="{% url 'to_file' %}">
         <button type="button" class="btn btn-dark btn-lg">Generate data to file</button>
+    </a>
+</div>
+<div class="h-100 d-flex align-items-center justify-content-center" style="margin-top:100px;">
+    <a href="{% url 'home' %}">
+        <img src="{% static 'images/generated_person.jpg' %}" alt="Photo of a person" width="500" height="500">
+    </a>
+</div>
+<div class="h-100 d-flex align-items-center justify-content-center" style="margin-top:10px;">
+    <a href="https://thispersondoesnotexist.com">
+        <p>Photo source: https://thispersondoesnotexist.com</p>
     </a>
 </div>
 
