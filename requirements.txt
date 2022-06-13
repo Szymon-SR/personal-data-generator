@@ -1,7 +1,6 @@
 asgiref==3.5.2
 beautifulsoup4==4.11.1
 black==22.3.0
-bs4==0.0.1
 certifi==2022.5.18.1
 charset-normalizer==2.0.12
 click==8.1.3
