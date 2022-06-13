@@ -139,3 +139,4 @@ GitHub.sublime-settings
 
 # Ignore all csv files
 *.csv
+static/images/generated_person.jpg

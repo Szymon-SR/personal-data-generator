@@ -1,11 +1,21 @@
-first_name    last_name phone_number birth_date       pesel              street_name house_number post_code         city                                 county                    voivodeship
-  Stefania      KORCZYK    703468430 30.10.1963 63103054523           Osiedle Osobie      61 / 46    26-603        Radom        Miasto Radom na prawach powiatu        Województwo mazowieckie
-   Marzena    STRZĄDAŁA    596315675  23.9.1984 84092338401                Biznesowa      52 / 77    02-620     Warszawa     Miasto Warszawa na prawach powiatu        Województwo mazowieckie
-   Urszula        CAŁUS    711687879  15.4.1933 33041514926                 Bobownia     87b / 84    52-119      Wrocław      Miasto Wrocław na prawach powiatu       Województwo dolnośląskie
- Bogusława   STRZELECKA    634726406  29.3.1922 22032928466                 Skrzynka      88 / 95    85-132    Bydgoszcz    Miasto Bydgoszcz na prawach powiatu Województwo kujawsko-pomorskie
- Stanisław        PĘKSA    594796302  20.8.1989 89082084937           Plac Ogrójecki            1    49-305        Brzeg                         Powiat brzeski           Województwo opolskie
-     Dawid       SŁAWEK    682397978   6.1.1962 62010694772                 Lemańska           85    65-155 Zielona Góra Miasto Zielona Góra na prawach powiatu           Województwo lubuskie
-     Tymon      ROMANOV    630756505  24.7.1987 87072454151               Muszkowska           82    24-170        Kurów                        Powiat puławski          Województwo lubelskie
-      Olga BARANKIEWICZ    547473632   8.8.1941 41080870020           Leona Chwistka      80 / 64    94-290         Łódź         Miasto Łódź na prawach powiatu            Województwo łódzkie
-  Genowefa        SAGAN    850503056  26.1.1987 87012652861 Aleksandra Starzeńskiego      87 / 11    81-131       Gdynia       Miasto Gdynia na prawach powiatu          Województwo pomorskie
-     Józef  WASIELEWSKI    654828659  3.11.1956 56110329690             Mieleszyńska          69f    75-581     Koszalin     Miasto Koszalin na prawach powiatu Województwo zachodniopomorskie
+first_name     last_name phone_number birth_date       pesel
+ Marcelina           ŁAŚ    695378631   3.9.1941 41090348120
+     Edyta    ROGALEWSKA    672730107  12.1.1928 28011294845
+    Marcin     SUCHOMSKI    637857542  10.7.1942 42071049218
+ Eugeniusz        KURYŁO    634636184  15.1.2004 04211521851
+    Julian     JURKOWSKI    728363464  6.10.1985 85100641375
+   Ewelina      WALECZEK    828735667  17.3.1968 68031751122
+     Łucja        ROSZYK    505117967  18.4.1969 69041814504
+    Dorota     SOBKOWSKA    500303011   1.1.1923 23010155146
+    Aniela          WOLF    723107112  4.10.1969 69100488044
+ Arkadiusz       GRYGIEL    860528132   3.7.1937 37070394597
+    Henryk         GLAPA    801627762 15.12.1987 87121594177
+     Zenon        SIEŃKO    513889491 23.12.1966 66122398838
+   Ryszard       RYCHTER    772574001   8.5.1994 94050874537
+    Szymon      CIEPŁUCH    645756837 16.10.1949 49101627477
+  Marianna PRZYBYSŁAWSKA    779852213 31.12.2003 03323185067
+     Ilona       GABRIEL    695119905  22.5.2000 00252257603
+     Anita       PIAŚCIK    767161136  10.1.1925 25011097924
+ Mirosława  KAZIMIERCZYK    556454177 16.10.1978 78101673423
+ Michalina     SOBKOWIAK    718085875  25.7.1926 26072524842
+  Wiesława    SZKLARCZYK    811088584  28.2.1994 94022836343
