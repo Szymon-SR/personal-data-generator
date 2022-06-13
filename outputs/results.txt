@@ -1,11 +1,11 @@
-first_name  last_name phone_number birth_date       pesel            street_name house_number post_code      city
-  Radosław    SALAMON    552603572  11.8.1994 94081123930                  Turka           39    93-349      Łódź
-  Krystyna WIERZBICKA    579266490  4.12.1958 58120427520              Gawryłowa           28    91-115      Łódź
-    Dorota  KOROLCZUK    711671933  21.9.1925 25092182005               Zgaślika      79 / 76    00-281  Warszawa
-   Ryszard    MLECZEK    881094596  16.1.1994 94011622010             Poli Negri          59c    21-046   Świdnik
- Marcelina     ROSIEK    772557391  16.7.1928 28071672267             Bledzewska           37    94-113      Łódź
-   Henryka      MIKOŚ    633854841  10.1.1990 90011010323   Tomasza Wawrzeckiego      5d / 93    03-640  Warszawa
-   Dariusz    OLSZOWY    526267963  7.10.1922 22100755770                Pilicka          92b    85-409 Bydgoszcz
-Władysława    KONDRAT    877240307  15.4.1948 48041564288           Jaroszowicka      43 / 72    91-211      Łódź
-     Józef   ŁĘCZYCKI    536679599  26.3.1971 71032681396                  Polna      63 / 43    80-734    Gdańsk
-       Iga     HERNAS    608648409  7.11.1951 51110771261 Włodzimierza Kalskiego        7 / 5    00-736  Warszawa
+first_name   last_name phone_number birth_date
+     Marek       RAJDA    537582029  8.12.1943
+     Kamil      DZIURA    649928318 27.11.1952
+    Łukasz       GRUPA    755889270  14.9.2003
+    Marcin       MUSIK    585243186  26.6.1953
+      Lena     PISKORZ    703395547  12.6.1936
+    Andrii    KWAŚNIAK    848156963   5.3.1986
+    Janina KIESZKOWSKA    545267170  24.1.1971
+ Sebastian       ŚWIĘS    732998148 15.11.1923
+     Lidia    SENDECKA    771323298   1.2.1959
+     Wanda    KRZEMPEK    810633381  14.9.1975
