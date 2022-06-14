@@ -1,21 +1,101 @@
-first_name     last_name phone_number birth_date       pesel
- Marcelina           ŁAŚ    695378631   3.9.1941 41090348120
-     Edyta    ROGALEWSKA    672730107  12.1.1928 28011294845
-    Marcin     SUCHOMSKI    637857542  10.7.1942 42071049218
- Eugeniusz        KURYŁO    634636184  15.1.2004 04211521851
-    Julian     JURKOWSKI    728363464  6.10.1985 85100641375
-   Ewelina      WALECZEK    828735667  17.3.1968 68031751122
-     Łucja        ROSZYK    505117967  18.4.1969 69041814504
-    Dorota     SOBKOWSKA    500303011   1.1.1923 23010155146
-    Aniela          WOLF    723107112  4.10.1969 69100488044
- Arkadiusz       GRYGIEL    860528132   3.7.1937 37070394597
-    Henryk         GLAPA    801627762 15.12.1987 87121594177
-     Zenon        SIEŃKO    513889491 23.12.1966 66122398838
-   Ryszard       RYCHTER    772574001   8.5.1994 94050874537
-    Szymon      CIEPŁUCH    645756837 16.10.1949 49101627477
-  Marianna PRZYBYSŁAWSKA    779852213 31.12.2003 03323185067
-     Ilona       GABRIEL    695119905  22.5.2000 00252257603
-     Anita       PIAŚCIK    767161136  10.1.1925 25011097924
- Mirosława  KAZIMIERCZYK    556454177 16.10.1978 78101673423
- Michalina     SOBKOWIAK    718085875  25.7.1926 26072524842
-  Wiesława    SZKLARCZYK    811088584  28.2.1994 94022836343
+ first_name      last_name phone_number birth_date       pesel               street_name house_number post_code                 city                                         county                     voivodeship
+    Jadwiga      TARKOWSKA    612615558   2.1.1993 93010276200                 Widlińska      12 / 47    10-443              Olsztyn              Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
+       Alan          WOLFF    741675696  26.7.1957 57072635959                 Semlińska           55    91-504                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+     Witold   SKRZYPKOWSKI    771693640  15.3.1949 49031546833               Osiedle Kąt           18    00-066             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+      Tymon     ZINKIEWICZ    733225302  24.9.1994 94092455255        dr. Macieja Suwady      81 / 85    80-452               Gdańsk               Miasto Gdańsk na prawach powiatu           Województwo pomorskie
+     Robert       GUMIENNY    651833959 11.11.1944 44111176218    Grzegorza Gorczyckiego           75    92-010                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+   Czesława         HUCZEK    777268735  18.2.1926 26021860641        Władysława Anczyca          25a    45-361                Opole                Miasto Opole na prawach powiatu            Województwo opolskie
+     Edward     FRANKOWICZ    542531324  30.6.1998 98063042558               Chwalęcicka     97j / 31    45-594                Opole                Miasto Opole na prawach powiatu            Województwo opolskie
+      Nadia       TARASIUK    674150974  5.11.1940 40110566803                    Rudzka           98    90-003                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+   Grzegorz          PLONA    645114160  22.1.1950 50012212993                Urbanowska          93d    25-738               Kielce               Miasto Kielce na prawach powiatu      Województwo świętokrzyskie
+   Dominika          KOŁAK    719646454  2.11.1971 71110243281               Plac Wałowy       71 / 4    45-654                Opole                Miasto Opole na prawach powiatu            Województwo opolskie
+     Fabian     RADKIEWICZ    772101039  22.4.1979 79042214018                Nad Gubrem      19 / 70    54-426              Wrocław              Miasto Wrocław na prawach powiatu        Województwo dolnośląskie
+    Marlena          DYLAK    779952249  16.5.1989 89051656800              Krzyszkowska           73    30-714               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+   Stefania      CIEMIŃSKA    609131035  24.7.1963 63072441669                   Rumiana      44 / 28    87-811             Fabianki                              Powiat włocławski  Województwo kujawsko-pomorskie
+  Sebastian         BOCHEN    818624136  3.10.1961 61100383299       Wacława Rogińskiego     40h / 52    10-698              Olsztyn              Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
+    Czesław        SKUBISZ    685577507 18.10.1949 49101810859                  Pachnąca           72    40-750             Katowice             Miasto Katowice na prawach powiatu             Województwo śląskie
+    Nikodem          ORTYL    714924459 13.11.1935 35111342635                   Księska           97    50-334              Wrocław              Miasto Wrocław na prawach powiatu        Województwo dolnośląskie
+   Waldemar       BABIŃSKI    689786515  30.8.1951 51083093177                   Jeżycki      34 / 75    91-444                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+     Wiktor            USS    707623462  18.7.1986 86071887038     inż. Józefa Kiedronia      77 / 75    91-064                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+   Antonina         TUŁACZ    830610838  11.9.1950 50091168280                    Ławska           91    41-600       Świętochłowice       Miasto Świętochłowice na prawach powiatu             Województwo śląskie
+     Błażej      TATARCZUK    805026368  11.8.1984 84081197778                 Pociskowa          60e    85-449            Bydgoszcz            Miasto Bydgoszcz na prawach powiatu  Województwo kujawsko-pomorskie
+   Stefania       WOJTCZUK    857519986  20.3.1975 75032088148                      Bory           76    37-550              Radymno                             Powiat jarosławski        Województwo podkarpackie
+     Miłosz         ZADORA    842101246  1.12.1951 51120181274                   Gburska           97    20-617               Lublin               Miasto Lublin na prawach powiatu           Województwo lubelskie
+ Aleksandra       DOMIŃSKA    595855243  14.2.1940 40021448906               Sierocińska     61i / 64    30-898               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+    Paulina   TRUSZCZYŃSKA    823975207  10.1.1990 90011040544                 Korwetowa      23 / 41    31-574               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+        Ewa        LANGNER    645403452   1.3.1972 72030170361          Ojców Bazylianów       81 / 4    41-100 Siemianowice Śląskie Miasto Siemianowice Śląskie na prawach powiatu             Województwo śląskie
+    Grażyna      WALENCIAK    839779420  27.7.1985 85072780847           ks. F. Kuboszka      11 / 73    41-400            Mysłowice            Miasto Mysłowice na prawach powiatu             Województwo śląskie
+     Marcel           LEJA    672988225 14.10.1957 57101441874    Franciszka Rybnickiego          32c    80-174               Gdańsk               Miasto Gdańsk na prawach powiatu           Województwo pomorskie
+Włodzimierz      PANKOWSKI    838870341   6.2.2003 03220641954               Marcepanowa      34 / 36    03-982             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+   Krystyna          PLUTA    891570143  1.10.1955 55100140107                Sękocińska      64 / 56    37-430               Jeżowe                                Powiat niżański        Województwo podkarpackie
+   Wioletta       BARTCZAK    625607752  23.1.1959 59012360921                   Kurobie      5b / 81    49-300                Brzeg                                 Powiat brzeski            Województwo opolskie
+   Wiesława         MENCEL    522244569   1.1.1975 75010129087                 Graficzna      67 / 99    46-053         Chrząstowice                                 Powiat opolski            Województwo opolskie
+   Radosław          GIERA    540651324  17.8.1975 75081777950                 Ślefarnia     90c / 66    51-179              Wrocław              Miasto Wrocław na prawach powiatu        Województwo dolnośląskie
+     Lucyna       STAWECKA    717891145   9.1.2004 04210924648           Alfreda Freyera           57    60-408               Poznań               Miasto Poznań na prawach powiatu       Województwo wielkopolskie
+      Hanna         PERLAK    861085837  15.9.1929 29091595181            Zygmunta Kwasa     71c / 57    75-121             Koszalin             Miasto Koszalin na prawach powiatu  Województwo zachodniopomorskie
+      Ilona         FICNER    529541819   3.2.1926 26020378028                  Wierzeje           94    02-654             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+    Norbert    KASPEROWICZ    721103383   8.5.1938 38050812719             Osiedle Leśne           23    00-673             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+    Marzena     PARADOWSKA    515533746  29.3.1931 31032917202              Szwoleżerska           18    04-805             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+      Alina     PACHOLCZYK    738843504  25.5.1949 49052543482                    Tyniec          19i    54-614              Wrocław              Miasto Wrocław na prawach powiatu        Województwo dolnośląskie
+Włodzimierz    WIERCIGROCH    854775737  13.6.1943 43061379955                     Aliny            6    85-131            Bydgoszcz            Miasto Bydgoszcz na prawach powiatu  Województwo kujawsko-pomorskie
+    Mateusz        GRZYBEK    595956359  22.5.1951 51052261277                     Lotna           76    50-502              Wrocław              Miasto Wrocław na prawach powiatu        Województwo dolnośląskie
+  Stanisław           IWAN    637217950  16.6.1991 91061669134                 Gozdowska      82 / 22    02-812             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+      Kamil       KUBISZYN    703451926  23.6.1975 75062382612                   Tkaczew           25    60-658               Poznań               Miasto Poznań na prawach powiatu       Województwo wielkopolskie
+    Urszula    GOŁĘBIEWSKA    890395862   5.4.1931 31040581929                Świetlików     83b / 91    85-204            Bydgoszcz            Miasto Bydgoszcz na prawach powiatu  Województwo kujawsko-pomorskie
+     Regina        WOŹNIAK    765204974  12.6.1989 89061263663               Jerzmanicka       39 / 5    45-441                Opole                Miasto Opole na prawach powiatu            Województwo opolskie
+   Elżbieta        LEBIODA    709873220  28.4.1937 37042840123               Dworzec PKP           56    77-320           Przechlewo                             Powiat człuchowski           Województwo pomorskie
+ Aleksandra    PORZEZIŃSKA    844503039  27.4.1973 73042783806    Zdzisława Dandelskiego     17g / 25    25-210               Kielce               Miasto Kielce na prawach powiatu      Województwo świętokrzyskie
+   Wioletta      STAWIŃSKA    815475033  16.9.1926 26091634001         Stanisława Toboły     31f / 60    31-340               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+   Dominika      NAKIELSKA    842337313  22.7.1959 59072278161                 Lansjerów      24 / 89    03-276             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+      Oskar         BETLEJ    822670913  16.5.1935 35051610975                     Warty          61e    40-859             Katowice             Miasto Katowice na prawach powiatu             Województwo śląskie
+     Monika         SMOLEŃ    800658783  18.3.1971 71031851141                      Olzy       39 / 2    31-989               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+     Edward       KALANDYK    769698498   5.6.1923 23060557778                   Firmowa      12e / 2    81-049               Gdynia               Miasto Gdynia na prawach powiatu           Województwo pomorskie
+      Beata      ZAGOŻDŻON    612490297  12.9.1928 28091283788             Ayrtona Senny      40 / 58    56-150              Krzelów                                Powiat wołowski        Województwo dolnośląskie
+      Dawid            GUZ    839750279  20.7.1958 58072076434       Bolesława Waszczuka           55    80-134               Gdańsk               Miasto Gdańsk na prawach powiatu           Województwo pomorskie
+ Małgorzata         WAŁĘGA    591878267 26.11.1970 70112626067               Garbarniana      19 / 74    02-454             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+      Oskar     ZEMBRZUSKI    830198595  15.5.1995 95051519256                   Borysza           14    00-693             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+      Wanda       DRABCZYK    707017408  24.7.1923 23072494285               Wartownicza      68 / 37    30-513               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+     Wiktor        TARASEK    837546345 14.11.1967 67111411594     ks. J. L Grajewskiego          36h    22-420         Skierbieszów                                Powiat zamojski           Województwo lubelskie
+   Radosław         KOŁPAK    733560018 23.12.1991 91122348835        Bronisława Szwalma           90    81-589               Gdynia               Miasto Gdynia na prawach powiatu           Województwo pomorskie
+     Michał     MYKHALCHUK    605794555  20.8.1956 56082041873                      Bąki           42    41-304     Dąbrowa Górnicza     Miasto Dąbrowa Górnicza na prawach powiatu             Województwo śląskie
+  Magdalena          MAJKA    526128341  12.6.2003 03261240808            Zadworze Górne           14    43-318        Bielsko-Biała        Miasto Bielsko-Biała na prawach powiatu             Województwo śląskie
+     Marian      LEMIESZEK    739080646 15.11.1975 75111510757                    Jachna      38 / 44    91-051                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+    Martyna NIEDZIAŁKOWSKA    871220409  13.4.1987 87041338563              Aleja Zimowa          92e    31-436               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+     Damian        ORLICKI    773884360  28.2.1992 92022863059           Henryka Debicha       4 / 88    43-300        Bielsko-Biała        Miasto Bielsko-Biała na prawach powiatu             Województwo śląskie
+      Kinga        ŻELAZEK    754466108 23.11.1924 24112320904               Tęczyńskich       15 / 5    61-131               Poznań               Miasto Poznań na prawach powiatu       Województwo wielkopolskie
+   Angelika     ROSZKOWSKA    561738709   1.7.1973 73070150405                Chróstecka      44 / 71    71-525             Szczecin             Miasto Szczecin na prawach powiatu  Województwo zachodniopomorskie
+      Józef      KOŚCIESZA    656560369  24.7.1928 28072438035             Księdza Wajdy     79a / 46    30-385               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+        Jan        ZAREMBA    602258897  10.3.2002 02231083650        Jana Potasińskiego          51f    31-463               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+       Lena          PAPIS    531880024  30.3.1958 58033070541            Andrzeja Bursy      98 / 64    40-311             Katowice             Miasto Katowice na prawach powiatu             Województwo śląskie
+   Radosław     KWIECIŃSKI    730717971  12.7.1996 96071242634                Starotorze      98 / 43    81-814                Sopot                Miasto Sopot na prawach powiatu           Województwo pomorskie
+     Dorota        MIRECKA    678878449 22.11.1985 85112264429              Dolina Mgieł           93    81-313               Gdynia               Miasto Gdynia na prawach powiatu           Województwo pomorskie
+     Ignacy          STRUG    507110588   6.8.1955 55080682497                  Moryńska           98    61-680               Poznań               Miasto Poznań na prawach powiatu       Województwo wielkopolskie
+    Mariusz       WACŁAWEK    695800595  22.2.1995 95022228914                 Drahimska      49 / 43    59-300                Lubin                                Powiat lubiński        Województwo dolnośląskie
+    Natalia      DZIEDZINA    689496567  14.2.1955 55021499649                  Lechicka           66    05-824               Tłuste                               Powiat grodziski         Województwo mazowieckie
+      Tymon       JAWORSKI    776154959  25.9.1973 73092582859          Lonisa Breugnota      80 / 12    91-177                 Łódź                 Miasto Łódź na prawach powiatu             Województwo łódzkie
+     Marcin         WIECHA    860011926  21.7.1950 50072189310               Dworzec PKS           94    40-302             Katowice             Miasto Katowice na prawach powiatu             Województwo śląskie
+     Janina      ŁUCZYŃSKA    506118857  18.9.1935 35091877769       Zbigniewa Stanclika     15i / 71    62-105                Łekno                             Powiat wągrowiecki       Województwo wielkopolskie
+   Patrycja           GILL    670001445  26.6.1988 88062636548                Dybówek II          95a    10-244              Olsztyn              Miasto Olsztyn na prawach powiatu Województwo warmińsko-mazurskie
+  Eugeniusz     LITWIŃCZUK    764072373   6.7.1971 71070678673                Komandoria          25i    03-185             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+     Edward      KACZYŃSKI    760080946  13.9.1964 64091322799                Nowe Wrota           97    41-300     Dąbrowa Górnicza     Miasto Dąbrowa Górnicza na prawach powiatu             Województwo śląskie
+   Wiesława         SMALEC    702561607  6.10.1971 71100661446            Juliana Prejsa       81 / 3    80-180               Gdańsk               Miasto Gdańsk na prawach powiatu           Województwo pomorskie
+ Przemysław          TOMYS    670164691   1.7.1947 47070180076                 Irlikówka           14    20-810               Lublin               Miasto Lublin na prawach powiatu           Województwo lubelskie
+     Sylwia      KARNOWSKA    582245737  22.3.1963 63032214722        Wiesława Hanczarka     90h / 89    03-287             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+     Patryk        TRUCHEL    877773398   6.1.1946 46010678558                   Hoserów           23    42-400            Zawiercie                           Powiat zawierciański             Województwo śląskie
+     Oliwia    ORGANIŚCIAK    633750109  14.6.1985 85061434687                Marymoncka      56 / 73    68-219              Tuplice                                  Powiat żarski            Województwo lubuskie
+     Monika         MAKARA    802324854  26.5.1923 23052660604             Krzywa Grobla           98    44-100              Gliwice              Miasto Gliwice na prawach powiatu             Województwo śląskie
+    Liliana          PYZIK    593546451  13.8.1981 81081395847                  Wielicka           21    44-268     Jastrzębie-Zdrój     Miasto Jastrzębie-Zdrój na prawach powiatu             Województwo śląskie
+    Klaudia      KASPERSKA    668058520   2.4.1987 87040254565             Osiedle Wimar     99g / 84    30-651               Kraków               Miasto Kraków na prawach powiatu         Województwo małopolskie
+     Cezary        ROSKOSZ    766264741  10.5.1968 68051059310                  Nomiarki        4 / 1    02-814             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+   Czesława       PRAWDZIK    858601370  23.7.1934 34072372549 Błogosławionego Ładysława      60 / 87    00-522             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+     Serhii         GAWLAS    773843149 15.10.1953 53101512598                Wielorybia           19    54-056              Wrocław              Miasto Wrocław na prawach powiatu        Województwo dolnośląskie
+     Cezary       KUKULSKI    536241493   1.4.1961 61040128279                     Kliny           72    02-273             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+  Tymoteusz         SOPATA    602425644  21.7.1934 34072132297               Terespolska      24 / 26    45-649                Opole                Miasto Opole na prawach powiatu            Województwo opolskie
+  Eugeniusz          KAMPA    649218439   1.6.1935 35060132811            Rondo Piekarzy       9 / 71    34-124         Klecza Górna                               Powiat wadowicki         Województwo małopolskie
+     Joanna     DZIEKAŃSKA    639195349  21.8.1997 97082149888                   Szeryfa          14b    85-133            Bydgoszcz            Miasto Bydgoszcz na prawach powiatu  Województwo kujawsko-pomorskie
+    Mariola            BOŚ    507897380   7.1.1932 32010771120                 Obarowska     17i / 53    85-511            Bydgoszcz            Miasto Bydgoszcz na prawach powiatu  Województwo kujawsko-pomorskie
+     Marcin   GOŁEMBIEWSKI    641369388 30.12.1941 41123081334                    Kupcza           73    75-111             Koszalin             Miasto Koszalin na prawach powiatu  Województwo zachodniopomorskie
+      Beata         HAMPEL    672438258   2.9.1987 87090236025        Władysława Wimmera       69 / 8    35-310              Rzeszów              Miasto Rzeszów na prawach powiatu        Województwo podkarpackie
+    Izabela         KAJZER    772283153  16.8.1968 68081690222     Ewarysta Estkowskiego      71 / 81    25-553               Kielce               Miasto Kielce na prawach powiatu      Województwo świętokrzyskie
+     Marcin        BABENKO    658205997  24.3.1979 79032425875                    Jaźnik      5a / 61    02-956             Warszawa             Miasto Warszawa na prawach powiatu         Województwo mazowieckie
+    Oliwier           OKŁA    863721429  4.12.1982 82120431090                    Żwirna          13c    42-600      Tarnowskie Góry                             Powiat tarnogórski             Województwo śląskie
